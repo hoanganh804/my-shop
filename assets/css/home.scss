@@ -15,7 +15,9 @@ $hover_color_font_blue: #2196f3;
     // background-position: -600px;
     // // background-size: cover;
     background-color: $hover_color_font_blue;
-    width: 600px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 1200px;
     height: 40px;
     position: relative;
     &::after {
@@ -25,7 +27,6 @@ $hover_color_font_blue: #2196f3;
       position: absolute;
       z-index: 2;
       right: 0;
-      border-top-right-radius: 50%;
     }
     &::before {
       content: "";
@@ -51,6 +52,8 @@ $hover_color_font_blue: #2196f3;
     border: 2px solid $hover_color_font_blue;
     border-radius: 10px;
     border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
     overflow: hidden;
 
     .daily_deal {
@@ -115,7 +118,7 @@ $hover_color_font_blue: #2196f3;
 .slider_category {
   margin-top: 20px;
   .slider_container {
-    border: 1px solid #ccc;
+    // border: 1px solid #ccc;
     width: 1200px;
 
     button.slick-arrow {
@@ -154,7 +157,7 @@ $hover_color_font_blue: #2196f3;
 
     .col_category {
       background-color: white;
-      border-left: 1px solid #ccc;
+      border-left: 1px dotted #ccc;
       width: 240px !important;
       .category_item {
         height: 80px;
@@ -164,9 +167,9 @@ $hover_color_font_blue: #2196f3;
         align-items: center;
         cursor: pointer;
 
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px dotted #ccc;
         &:hover {
-          box-shadow: 5px 5px 10px #ccc;
+          box-shadow: 3px 3px 10px #ccc;
         }
         &:last-child {
           border: none;
@@ -377,7 +380,7 @@ $hover_color_font_blue: #2196f3;
     box-shadow: 5px 5px 10px #ccc;
   }
   .slider_container {
-    border: 1px solid #ccc;
+    // border: 1px solid #ccc;
     width: 1200px;
     box-shadow: 10px 0px 10px -10px #ccc;
 
@@ -417,7 +420,7 @@ $hover_color_font_blue: #2196f3;
 
     .col_popular {
       background-color: white;
-      border-left: 1px solid #ccc;
+      border-left: 1px dotted #ccc;
       width: 240px !important;
       .popular_item {
         height: 80px;
@@ -427,7 +430,7 @@ $hover_color_font_blue: #2196f3;
         align-items: center;
         cursor: pointer;
 
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px dotted #ccc;
         &:hover {
           box-shadow: 5px 5px 10px #ccc;
         }
