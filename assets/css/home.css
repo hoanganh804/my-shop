@@ -1,6 +1,17 @@
+.slider_banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transform: translateX(18px);
+          transform: translateX(18px);
+}
+
 .slider_banner .slider_img {
   width: 1200px;
-  height: 400px;
+  height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
 }

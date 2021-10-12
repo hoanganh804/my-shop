@@ -1,9 +1,12 @@
 $hover_color_font_blue: #2196f3;
 
 .slider_banner {
+  display: flex;
+  justify-content: flex-end;
+  transform: translateX(18px);
   .slider_img {
     width: 1200px;
-    height: 400px;
+    height: 350px;
     object-fit: cover;
   }
 }

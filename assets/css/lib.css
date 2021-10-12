@@ -6276,6 +6276,6 @@ body.modal-open .mm-slideout {
   cursor: pointer;
 }
 .header-menu-holder {
-  display: none;
+  /* display: none; */
   padding: 2px 0;
 }
