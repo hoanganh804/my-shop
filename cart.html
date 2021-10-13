@@ -11,21 +11,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.anphatpc.com.vn/template/anphat_2020v2/script/lib.css">
-    <link rel="stylesheet" href="./assets/css/themify-icons.css" type="text/css" />
-
-
-    <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/slick/slick-theme.css" />
 
 
     <link rel="stylesheet" href="./assets/css/lib.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/web_pc.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/category.css" type="text/css" />
-    <link rel="stylesheet" href="./assets/css/product_detail.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/themify-icons.css" type="text/css" />
 
     <meta http-equiv="content-language" content="vi" />
 
-    <!-- <script src="./js/category.js"></script> -->
+    <script src="./js/category.js"></script>
 
 </head>
 
@@ -157,8 +152,7 @@
                     <!-- mennu -->
                     <div class="header-menu d-flex align-items-center">
                         <div class="header-menu-container">
-                            <a class="d-block font-weight-light text-white menu-title"
-                                style="font-size: 15px;cursor: pointer;">
+                            <a class="d-block font-weight-light text-white menu-title" style="font-size: 15px;cursor: pointer;">
                                 <i class="fa fa-bars list-product"></i> DANH MỤC SẢN PHẨM
                             </a>
 
@@ -2653,218 +2647,558 @@
         </div>
     </header>
 
+    <!-- cart page -->
+    <div class="cart-page container" data-id="">
+    
+      <form method="post" enctype="multipart/form-data" action='/send-cart' id="formCart" onsubmit="return check_field_new()">
+          <div id="breadcrumb">
+              <ol class="ul clearfix" itemscope itemtype="http://schema.org/BreadcrumbList">
+                  <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                      <a href="/" itemprop="item" class="nopad-l">
+                          <span itemprop="name"><i class="icon icon-home"></i></span>
+                      </a>  
+                      <meta itemprop="position" content="1" />
+                  </li>
+  
+                  <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                      <a href="" itemprop="item" class="nopad-l">
+                          <span itemprop="name"> 
+                              <h1>Giỏ hàng của bạn</h1>
+                          </span>
+                      </a>
+                      <meta itemprop="position" content="2" />
+                  </li>
+              </ol>
+          </div>
+  
+          <div class="space10px"></div>
+          <div class="space10px"></div>
+  
+          <p style="width:830px; margin:auto; margin-bottom:10px; font-weight:bold;"><a href="/"><i class="fa fa-angle-left"></i> Quay lại mua thêm sản phẩm khác</a></p>
+        
+          <div class="cart-container">
+              <h1 style="margin:0">Giỏ hàng của bạn</h1>
+              <p><b class="red">Liên hệ nhân viên trước khi chuyển tiền mua hàng. <br>
+                  Để đặt hàng</b>, quý khách vui lòng kiểm tra sản phẩm, số lượng, giá, màu sắc và điền các thông tin dưới đây:
+              </p>
+  
+              <div id="content">
+                  <!--Buoc 1 : gio hang-->
+                  <table cellpadding="5" border="0" bordercolor="#CCCCCC" style="border-collapse:collapse; width:100%; " id="tbl_list_cart">
+                      <span style="display: none;"></span>
+  
+                      
+                      
+  
+                      
+                      
+  
+                       
+                      
+  
+                      <tr class="js-item-row" data-variant_id="0" data-item_id="34019" data-item_type="product" data-check="">
+                          <td class="product_cart" width="75"> 
+                              <a href="/may-tinh-choi-game-pcap-asus-tuf-pro-1_id34019.html"><img src="https://anphat.com.vn/media/product/120_34019_dsc09480.JPG" style="border:solid 1px #ccc;"/> </a>
+                              <p class="text-center"><a href="javascript:;" class="delete-from-cart"><img src="/template/anphat_2020v2/images/icon_del.png" /></a></p>
+                          </td>
+  
+                          <td style="vertical-align: top;">
+                              <a href="/may-tinh-choi-game-pcap-asus-tuf-pro-1_id34019.html" style="text-decoration:none"> <b> PC Gaming-Máy tính chơi game PCAP PRO</b> </a>
+  
+                              
+                                  <p class="red">Mã sản phẩm: PCAP102</p>
+  
+                                  <p>Bảo hành: Theo từng linh kiện</p>
+  
+                                  
+                                  <div><span class="red">Khuyến mại:</span><div style="white-space:pre-line;">Tặng thẻ bảo hành 12 tháng tại nơi sử dụng trị giá 290.000 VNĐ (phạm vi 15km, tối đa 5 lần, THED0016)
+  Giá SỐC, không áp dụng cùng hoặc cộng dồn với các CTKM khác
+  - Giảm giá lên tới <span style="color: red"><b>1.000.000đ</span></a></b> khi mua cùng màn hình: <a href="https://www.anphatpc.com.vn/collection/khuyen-mai-khi-mua-cung-pcap"><span style="color: red"><b> Danh sách màn hình xem tại đây </span></a></b></div></div>
+                                  
+                              
+  
+                              <div class="clear"></div>
+                          </td>
+  
+                          <td width="220" style="text-align:right; line-height:22px;">
+                              
+                              <span style="color:#999; text-decoration:line-through">31.599.000 đ</span><br>
+                              
+  
+                              <input type="hidden" class="bulk_price_config" value='[]'>
+                              <input type="hidden" class="buy-price" value="28199000">
+                              <span>28.199.000</span> đ<br/>
+  
+                              <b class="red">
+                                  Tổng: <span class="total-item-price">28.199.000</span> đ
+                              </b>
+  
+                              <div class="cart-select-quantity unit-detail-amount-control">
+                                  <a href="javascript:;" class="quantity-change amount-down minus" data-value="-1">-</a>
+  
+                                   
+                                  
+                                  <input type="text" size="3" value="1" class="buy-quantity quantity-change" data-stock="999">
+                                  
+                                  <a href="javascript:;" class="quantity-change amount-up plus" data-value="1">+</a>
+                              </div>
+                          </td>
+                      </tr>
+  
+                      
+                      
+                      
+  
+                      
+                      
+  
+                       
+                      
+  
+                      <tr class="js-item-row" data-variant_id="0" data-item_id="38628" data-item_type="product" data-check="">
+                          <td class="product_cart" width="75"> 
+                              <a href="/laptop-asus-tuf-gaming-fx706hc-hx003t-core-i5-11400h-8gb-512gb-rtx-3050-4gb-17.3-inch-fhd-win-10-xam_id38628.html"><img src="https://anphat.com.vn/media/product/120_38628_techzones_asus_tuf_gaming_f17_fx706hc_hx003t_i5_11400h_8gb_512gb_ssd_rtx_3050_1.jpg" style="border:solid 1px #ccc;"/> </a>
+                              <p class="text-center"><a href="javascript:;" class="delete-from-cart"><img src="/template/anphat_2020v2/images/icon_del.png" /></a></p>
+                          </td>
+  
+                          <td style="vertical-align: top;">
+                              <a href="/laptop-asus-tuf-gaming-fx706hc-hx003t-core-i5-11400h-8gb-512gb-rtx-3050-4gb-17.3-inch-fhd-win-10-xam_id38628.html" style="text-decoration:none"> <b> Laptop Asus TUF Gaming FX706HC-HX003T (Core i5-11400H | 8GB | 512GB | RTX 3050 4GB | 17.3 inch FHD | Win 10 | Xám)</b> </a>
+  
+                              
+                                  <p class="red">Mã sản phẩm: NBAS0986</p>
+  
+                                  <p>Bảo hành: 24 tháng (Pin 12 Tháng), Đổi mới trong 15 ngày</p>
+  
+                                  
+                                  <div><span class="red">Khuyến mại:</span><div style="white-space:pre-line;"><b><font color="Blue">Quà tặng đi kèm khi mua máy tính xách tay </font></b>  
+  ✦ Chuột Gaming chính hãng  (MUKH0020, MUTG0001)
+  ✦Tặng túi chống sốc cho laptop (TUNB0006)hoặc đến khi hết hàng mà ko cần báo trước.
+  ✦ Bàn di chuột (BDRZ0003)
+  ✦ Bộ vệ sinh laptop (BOVS0001)
+  ✦ <a href="https://www.anphatpc.com.vn/loa-soundmax-bluetooth-r-600-loa-di-dong.html" target="_blank"> <font color="RED"><b>Ưu đãi mua cùng Loa SoundMax BLUETOOTH R-600 (loa di động - đèn led RBG)chỉ với giá 490.000 VNĐ</b></font> </a>
+  ✦ <a href="https://www.anphatpc.com.vn/loa-may-tinh_dm1042.html" target="_blank"> <font color="red"><b>Ưu đãi mua cùng Loa máy vi tính Creative SBS A35 chỉ với giá 190.000 VNĐ</b></font> </a>
+  ✦ Tặng Balo TUF Gaming áp dụng đến hết 31/10/2021 hoặc đến khi hết quà <a href="https://www.anphatpc.com.vn/tuu-truong-that-cool-work-hard-play-hard-with-rog_idtin8051.html" target="_blank"> <font color="red"><b>Chi tiết nhận quà xem tại đây</b></font> </a>
+  <a href=" https://www.anphatpc.com.vn/de-tan-nhiet-may-tinh-hideki-h36_id32672.html"> <font color="blue"><b>✦ Giảm 20% khi mua cùng  Đế Tản Nhiệt máy tinh HIDEKI H36 (WFTP0004))</b></font> </a></div></div>
+                                  
+                              
+  
+                              <div class="clear"></div>
+                          </td>
+  
+                          <td width="220" style="text-align:right; line-height:22px;">
+                              
+                              <span style="color:#999; text-decoration:line-through">26.990.000 đ</span><br>
+                              
+  
+                              <input type="hidden" class="bulk_price_config" value='[]'>
+                              <input type="hidden" class="buy-price" value="25990000">
+                              <span>25.990.000</span> đ<br/>
+  
+                              <b class="red">
+                                  Tổng: <span class="total-item-price">25.990.000</span> đ
+                              </b>
+  
+                              <div class="cart-select-quantity unit-detail-amount-control">
+                                  <a href="javascript:;" class="quantity-change amount-down minus" data-value="-1">-</a>
+  
+                                   
+                                  
+                                  <input type="text" size="3" value="1" class="buy-quantity quantity-change" data-stock="999">
+                                  
+                                  <a href="javascript:;" class="quantity-change amount-up plus" data-value="1">+</a>
+                              </div>
+                          </td>
+                      </tr>
+  
+                      
+                      
+  
+  
+                      
+  
+                      <tr>
+                        <td colspan="2">
+                          <p><b class="red">Mã giảm giả / Quà tặng</b></p>
+                          <div class="voucher">
+                            <input type="text" placeholder="Nhập mã giảm giá" class="txt" id="js_voucher_input" name="coupon_code"/>
+  
+                            <a href="javascript:void(0);" class="button button-check-discount js-voucher-submit" style="padding:7px 10px">Áp dụng</a>
+  
+                            <div class="clear"></div>
+                            <span id="js-voucher-message" style="margin: 5px 0px; display: block; color:#f00; font-size:13px;"></span>
+                            <div class="clear"></div>
+                          </div>
+  
+                        </td>
+                        <td colspan="1" style="text-align:right; line-height:22px; color:#555">
+                          Phí vận chuyển: <span id="fee-shipping">0</span> đ<br/>
+                          Phí thu hộ: <span id="fee-keep">0</span> đ<br>
+                          <input type="hidden" id="discount_code" value=""/>
+  
+                          <span class="bold red">Tổng cộng: <span class="sub1 total_value_step total-cart-payment" id='total_value' data-value =""> </span> đ</span><br/>
+  
+                          <span id="other-discount">Giảm giá: <span data-discount="0" id='price-discount' class="txt_pink">0</span> đ</span><br/>
+  
+                          <span class="red bold">Thanh toán: <span class="total-cart-payment" id='total_shopping_price'> </span> đ</span>
+  
+                          <div class="clear space5px"></div>
+  
+                          <a href="/print/user.php?view=cart-new" target="_blank" class="txt_b"><i class="fa fa-print"></i> In báo giá</a>
+  
+                          <a href="/ajax/export_download.php?file_type=xls&content_type=shopping-cart-new" class="txt_b" style="padding-left:10px">
+                            <i class="fa fa-download"></i> Tải file excel</a>
+  
+                        </td>
+                      </tr>
+                  </table>
+  
+                  
+                  <div class="d-flex justify-content-between" style="border-top: solid 1px #ddd;padding-top: 15px;">
+                    <!--  <div class="vnpay-text-container" style="border-radius: 4px;display: inline-block;border: 1px solid rgb(20, 53, 195);background-color: rgba(20, 53, 195, 0.08);padding: 0.5rem 1.25rem;position: relative;overflow: hidden;cursor: pointer;width: 54%;">
+                          <b class="blue"> Thanh toán Online qua cổng VNPAY </b> 
+                          <span class="bg-blue text-white" style="display: inline-block;padding: 0.2rem 0.4rem;border-radius: 2px;font-size: 11px;margin-left: 8px;vertical-align: bottom;">Khuyên dùng</span>
+                          <p style="color: #848788;margin-bottom: 0.5rem"> Thanh toán qua Internet Banking, Visa, Master, JCB, VNPAY-QR </p>
+                          <li>
+                              Nhập mã <strong>XXX XXX</strong> 
+                              giảm thêm 5% tối đa <b class="red">200.000đ</b> 
+                              khi thanh toán qua VNPAY-QR.<a href="" target="blank" class="blue">Xem chi tiết</a>
+                          </li>
+                      </div> -->
+  
+                      <p style="width: 100%" class="d-flex justify-content-between">
+                          
+                              <a href="javascript:scollTo('#step2')" class="btn-cart btn-cart-red" style="width: 49%;">Đặt Hàng</a>
+                           
+                        
+                        <a href="/cart?show=tragop&type=cart" class="btn-cart btn-cart-orange" style="width: 49%;">Mua trả góp</a>
+                      </p>
+                  </div>
+              </div><!--content-->
+          </div><!--cart-container-->
+  
+          <div class="clear space10px"></div>
+           
+  
+          <div class="cart-container" id="step2">
+              <h1 style="margin:0">Đặt hàng</h1>
+             
+              <div class="hide">
+                  <a id="thanhtoan" class="btn_red float_r btn_cart" href="/cart?step=2">Tiếp tục</a>
+                  <a class="btn_cyan float_r btn_cart" href="/">Mua thêm sản phẩm khác</a>
+                  <a href="/print/user.php?view=cart" rel="nofollow" class="bg icon_inbaogia"></a>
+              </div>
+            
+              <div class="clear space2"></div>
+            
+              <div class="cart_step2">
+                <!--Buoc 2 gio hang-->
+                
+                  <input type='hidden' id='current_open_info' value='' />
+                  
+                  <div class="title_box_cart">1. Thông tin khách hàng</div>
+  
+                  <div class="box-cart-user-info">
+                      <div class="sex">
+                          <div class="radio">
+                              <label>
+                                  <input type="radio" name="sex" value="Anh" checked="checked">
+                                  <span class="icon"></span> Anh
+                              </label>
+                          </div>
+  
+                          <div class="radio">
+                              <label>
+                                  <input type="radio" name="sex" value="Chị">
+                                  <span class="icon"></span> Chị
+                              </label>
+                          </div>
+                      </div>
+  
+                      <input type="text" name="user_info[name]" id="buyer_name" value="" placeholder="Họ tên"/>
+                      <input type="text" name="user_info[email]" id="buyer_email" value='' placeholder="Email"/>
+                      <input type="text" name="user_info[tel]" id="buyer_tel" value='' placeholder="Số điện thoại"/>
+  
+                      <select name="user_info[province]" id="ship_to_province" onchange="getDistrict(this.value)">
+                          <option value="0">--Chọn Tỉnh/TP--</option> 
+                          
+                          <option value="1">Hà Nội</option>
+                          
+                          <option value="2">TP HCM</option>
+                          
+                          <option value="5">Hải Phòng</option>
+                          
+                          <option value="4">Đà Nẵng</option>
+                          
+                          <option value="6">An Giang</option>
+                          
+                          <option value="7">Bà Rịa-Vũng Tàu</option>
+                          
+                          <option value="13">Bình Dương</option>
+                          
+                          <option value="15">Bình Phước</option>
+                          
+                          <option value="16">Bình Thuận</option>
+                          
+                          <option value="14">Bình Định</option>
+                          
+                          <option value="8">Bạc Liêu</option>
+                          
+                          <option value="10">Bắc Giang</option>
+                          
+                          <option value="9">Bắc Kạn</option>
+                          
+                          <option value="11">Bắc Ninh</option>
+                          
+                          <option value="12">Bến Tre</option>
+                          
+                          <option value="18">Cao Bằng</option>
+                          
+                          <option value="17">Cà Mau</option>
+                          
+                          <option value="3">Cần Thơ</option>
+                          
+                          <option value="24">Gia Lai</option>
+                          
+                          <option value="25">Hà Giang</option>
+                          
+                          <option value="26">Hà Nam</option>
+                          
+                          <option value="27">Hà Tĩnh</option>
+                          
+                          <option value="30">Hòa Bình</option>
+                          
+                          <option value="28">Hải Dương</option>
+                          
+                          <option value="29">Hậu Giang</option>
+                          
+                          <option value="31">Hưng Yên</option>
+                          
+                          <option value="32">Khánh Hòa</option>
+                          
+                          <option value="33">Kiên Giang</option>
+                          
+                          <option value="34">Kon Tum</option>
+                          
+                          <option value="35">Lai Châu</option>
+                          
+                          <option value="38">Lào Cai</option>
+                          
+                          <option value="36">Lâm Đồng</option>
+                          
+                          <option value="37">Lạng Sơn</option>
+                          
+                          <option value="39">Long An</option>
+                          
+                          <option value="40">Nam Định</option>
+                          
+                          <option value="41">Nghệ An</option>
+                          
+                          <option value="42">Ninh Bình</option>
+                          
+                          <option value="43">Ninh Thuận</option>
+                          
+                          <option value="44">Phú Thọ</option>
+                          
+                          <option value="45">Phú Yên</option>
+                          
+                          <option value="46">Quảng Bình</option>
+                          
+                          <option value="47">Quảng Nam</option>
+                          
+                          <option value="48">Quảng Ngãi</option>
+                          
+                          <option value="49">Quảng Ninh</option>
+                          
+                          <option value="50">Quảng Trị</option>
+                          
+                          <option value="51">Sóc Trăng</option>
+                          
+                          <option value="52">Sơn La</option>
+                          
+                          <option value="53">Tây Ninh</option>
+                          
+                          <option value="56">Thanh Hóa</option>
+                          
+                          <option value="54">Thái Bình</option>
+                          
+                          <option value="55">Thái Nguyên</option>
+                          
+                          <option value="57">Thừa Thiên-Huế</option>
+                          
+                          <option value="58">Tiền Giang</option>
+                          
+                          <option value="59">Trà Vinh</option>
+                          
+                          <option value="60">Tuyên Quang</option>
+                          
+                          <option value="61">Vĩnh Long</option>
+                          
+                          <option value="62">Vĩnh Phúc</option>
+                          
+                          <option value="63">Yên Bái</option>
+                          
+                          <option value="19">Đắk Lắk</option>
+                          
+                          <option value="22">Đồng Nai</option>
+                          
+                          <option value="23">Đồng Tháp</option>
+                          
+                          <option value="21">Điện Biên</option>
+                          
+                          <option value="20">Đăk Nông</option>
+                            
+                      </select>
+  
+                      <div id="district-holder-login"></div>
+  
+                      <textarea name="user_info[address]" id="buyer_address" placeholder="Địa chỉ"></textarea>
+                      <textarea name="user_info[note]" id="buyer_note" placeholder="Ghi chú"></textarea>
+                      <div class="clear"></div>
+                  </div><!--box-cart-user-info-->
+                  
+                  <div class="box-cart-user-info">
+                      <div class="title_box_cart">2. Hình thức thanh toán</div>
+                      <table>
+                          
+                          
+                          <tr>
+                              <td valign="top">
+                                  <label>
+                                      <div class="radio">
+                                          <input type="radio" name='pay_method' value="1" onchange="show('pay_0'); checkTotalShippingFee()" checked="checked" id="pay_method_cod"/>
+                                          <span class="icon"></span>
+                                      </div>
+                                  </label>
+                              </td>
+  
+                              <td>
+                                  <label class="txt0" for="pay_method_cod">COD</label>
+                                  <div class="txt_555" id='pay_0' style="display:none;white-space: pre-line;">Thanh toán tiền khi nhận được hàng. Quý khách ở ngoại tỉnh sẽ chịu thêm 1% giá trị đơn hàng từ chi phí thu hộ. Quý khách ở Hà Nội được miễn phí.</div>
+                              </td>
+                          </tr>
+                          
+                          
+                          
+                          <tr>
+                              <td valign="top">
+                                  <label>
+                                      <div class="radio">
+                                          <input type="radio" name='pay_method' value="2" onchange="show('pay_1'); checkTotalShippingFee()"  id="pay2"/>
+                                          <span class="icon"></span>
+                                      </div>
+                                  </label>
+                              </td>
+  
+                              <td>
+                                  <label class="txt0" for="pay2">Chuyển khoản</label>
+                                  <div class="txt_555" id='pay_1' style="display:none;white-space: pre-line;">Quý khách chuyển khoản trước theo thông tin dưới đây :
+  
+  Công ty Cổ Phần Thương Mại Máy Tính An Phát
+  Tầng 5, Số 49 phố Thái Hà, Phường Trung Liệt, Quận Đống Đa, Thành phố Hà Nội, Việt Nam
+  MST: 0108940873
+   
+  •Vietcombank chi nhánh Hoàn Kiếm - 0301 000 426 596 
+  •Techcombank chi nhánh Đống Đa - 1913 506 287 3012 
+  •ACB chi nhánh Đông Đô (Phòng giao dịch Kim Liên) - 888 995 8888   
+  •Vietinbank chi nhánh Nam Thăng Long - 119 002 805 268 
+  •BIDV chi nhánh Hà Thành - 1221 000 201 8450                              </div>
+                              </td>
+                          </tr>
+                          
+                          
+                          
+                          
+                          
+                          
+                      </table>
+                  </div><!--box-cart-user-info--> 
+  
+                  <p>&nbsp;</p>
+  
+                  <div class="box-cart-user-info">
+                      <div class="title_box_cart">3. Xuất hóa đơn công ty</div>
+                       <div style="width: 100%; margin: 10px 0; padding: 0 10px;">
+                          <fieldset>
+                              <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                  <tbody>
+                                      <tr>
+                                          <td width="120" align="left">Công ty/Tổ chức: </td>
+                                          <td align="left">
+                                              <input type="text" id="txtTaxName" value="" size="50" name="user_info[tax_company]">
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td width="120" align="left">Địa chỉ: </td>
+                                          <td align="left">
+                                              <input type="text" id="txtTaxAddress" value="" size="50" name="user_info[tax_address]">
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td width="120" align="left">Mã số thuế: </td>
+                                          <td align="left">
+                                              <input type="text" id="txtTaxCode" name="user_info[tax_code]" value="">
+                                              <span class="cmt" id="txtTaxCodeView">&nbsp;</span>
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </fieldset>
+                      </div>
+                  </div>
+  
+                  <p>&nbsp;</p>
+  
+                  <div class="box-cart-user-info">
+                      <div class="title_box_cart">4. Hình thức vận chuyển</div>
+                      <div>
+                          <table>
+                              
+                              <tr>
+                                  <td valign="top">
+                                      <div class="radio">
+                                          <label>
+                                              <input type="radio" name='ship_method' id="ship2" value="2"  onchange="show('ship_0')" checked="checked"/>
+                                              <span class="icon"></span>
+                                          </label>
+                                      </div>
+                                  </td>
+                                  <td>
+                                      <label class="txt0" for="ship2">Giao hàng bình thường</label>
+                                      <div class="txt_555" id='ship_0' style="display:none;">Giao hàng trong vòng từ 3h - 5h ngay khi xác nhận đơn hàng đối với khách hàng ở nội thành Hà Nội. Từ 2-5 ngày đối với các khách hàng ở tỉnh.</div>
+                                  </td>
+                              </tr>
+                              
+                          </table>
+                      </div>
+                  </div><!--box-cart-user-info--> 
+                
+                  
+                  <div class="clear space10px"></div>
+  
+                  <div class="clear txt_center" id="js-btn-submit-container">
+                      <!-- <input type="submit" id="btn-submit" class="btn_red txt_u robot" value="Gửi đơn hàng" style="padding:15px 50px;font-size:25px"/></div> -->
+                      <button type="submit" id="btn-submit" class="btn_red txt_u robot" style="padding:15px 50px;font-size:25px" >Gửi đơn hàng</button>
+                      <div class="clear"></div>
+                  </div>
+                
+                
+                  <input type="hidden" name="send_order" value="yes" />
+                  <input type="hidden" id="js-total-before-fee-discount" value="">
+                  <!---mot so bien khac chi de front-end-->
+                  <input type="hidden" id="js-discount-voucher" value="0">
+                  <input type="hidden" name="coupon_code" value="" id="js_coupon_code">
+                  <input type="hidden" id="js-discount-membership" value="0">
+                  <input type="hidden" name="shipping_fee" id="js-fee-shipping" value="0">
+                  <input type="hidden" name="cod_fee" id="js-fee-cod" value="0">
+            
+                  <div class="clear"></div>
+              </div><!--container-->
+          </div>
+      </form>
+      
+  </div>  
+    <!-- cart page -->
 
-    <section class="product-detail-page container">
-        <div class="container" style="padding: 0;">
-            <div id="breadcrumb">
-                <ol class="ul clearfix">
-                    <li>
-                        <a href="/" itemprop="item" class="nopad-l">
-                            <span itemprop="name"><span style="font-size: 0px">Home</span> <i
-                                    class="icon icon-home"></i></span>
-                        </a>
-                        <meta itemprop="position" content="1" />
-                    </li>
-
-                    <li>
-                        <a href="/may-tinh-xach-tay-laptop.html" itemprop="item" class="nopad-l">
-                            <span itemprop="name">Máy tính xách tay - Laptop</span>
-                        </a>
-                        <meta itemprop="position" content="2" />
-                    </li>
-                    <li>
-                        <a href="/laptop-intel-evo_dm2295.html" itemprop="item">
-                            <span itemprop="name">
-                                <h1> Laptop Intel Evo </h1>
-                            </span>
-                        </a>
-                        <meta itemprop="position" content="3" />
-                    </li>
-                </ol>
-            </div>
-            <section class="product-detail-container row">
-                <div class="product-slider col-lg-6 col-sm-12">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="./assets/img/photo.jpg" alt="First slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./assets/img/photo.jpg" alt="Second slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="./assets/img/photo.jpg" alt="Third slide">
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="product_detail col-lg-6 col-sm-12">
-                    <div class="product_detail-name">WiFi ốp trần Tenda AP i24 tốc độ 1167Mbps, tải thực tế 80-100 thiết
-                        bị, cổng PoE chuẩn Gigabit</div>
-                    <div class="product_detail-price">
-                        <div class="product_detail-price-now">1790000<u>đ</u></div>
-                        <div class="product_detail-price-prev">2000000<u>đ</u></div>
-                    </div>
-                    <div class="product_detail-feature">
-                        <ul>
-                            <li>Chịu tải WiFi 80-100 thiết bị.</li>
-                            <li>Sóng chuẩn AC 1167Mbps (2.4Ghz 300Mbps + 5.0Ghz 867Mbps)</li>
-                            <li> Anten với công suất 4 dBi</li>
-                            <li>Băng tần kép 2.4 / 5.0Ghz</li>
-                        </ul>
-                    </div>
-                    <div class="variant-item">
-                        <b class="d-block"> Tuỳ chọn sản phẩm </b>
-
-                        <!--<div class="owl-carousel owl-theme js-items-variant items-variant">-->
-                        <div class="items-variant items-variant-noSlider d-flex flex-wrap">
-
-                            <div class="item" style="height: unset">
-                                <label class="current">
-                                    <input type="checkbox" checked="checked"> Dell Latitude 3420 L3420I5SSD (Core
-                                    i5-1135G7 | 8GB | 256GB | Intel Iris Xe | 14.0 inch HD | Win 10 | Đen)
-                                    <span class="d-block variant-price">
-                                        20.790.000 đ
-
-                                    </span>
-                                </label>
-                            </div>
-
-                            <div class="item" style="height: unset">
-                                <label>
-                                    <input type="checkbox"> Dell Latitude 3420 42LT342002 (Core i5-1135G7 | 8GB | 1TB |
-                                    Intel Iris Xe | 14.0 inch HD | Ubuntu | Đen)
-                                    <span class="d-block variant-price">
-                                        18.290.000 đ
-
-                                    </span>
-                                </label>
-                            </div>
-
-                            <div class="item" style="height: unset">
-                                <label>
-                                    <input type="checkbox"> Dell Latitude 3420 42LT342001 (Core i3-1115G4 | 4GB | 256GB
-                                    | Intel UHD | 14.0 inch HD | Fedora | Đen)
-                                    <span class="d-block variant-price">
-                                        14.090.000 đ
-
-                                    </span>
-                                </label>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="product_detail-cart row">
-
-                        <button class="button-buynow col-12">ĐẶT MUA NGAY
-                            <span>Nhanh chóng, thuận tiện</span>
-                        </button>
-
-                        <button class="button-tragop col">MUA TRẢ GÓP
-                            <span>Thủ tục đơn giản</span></button>
-                        <div class="col-1" style="flex: 0; padding: 5px;"></div>
-
-                        <button class="button-add col">THÊM VÀO GIỎ
-                            <span>Mua tiếp sản phẩm</span></button>
-
-
-
-
-                    </div>
-
-
-                </div>
-
-            </section>
-            <section class="product_description row">
-                <div class="title">Mô tả sản phẩm</div>
-                <div id="summary">
-                    <p class="collapse" id="collapseSummary">
-                        <span>
-
-                            WiFi ốp trần Tenda AP i24 là thiết bị phát sóng Accesspoint (điểm truy cập) có chức năng duy
-                            nhất là kết nối tín hiệu trung gian giữa Router & Thiết bị sử dụng như: SmartPhone, Laptop,
-                            Camera… Cần lưu ý bộ phát WiFi chuẩn Acesspoint (AP) không cấp phát IP internet nhưng chịu
-                            tải
-                            kết nối số lượng lớn thiết bị sử dụng, ngoài ra một hệ thống nhiều AP có khả năng đồng bộ
-                            thành
-                            1 sóng WiFi (SSID) là môi trường hoạt động cho các hệ thống không dây nội bộ như: Camera,
-                            Điện
-                            thoại, Máy pos, Thiết bị quản lý vận hành sản xuất… <br>
-                        </span>
-                        <span class="title-hot">TÍNH NĂNG WiFi ỐP TRẦN TENDA AP i24<br></span>
-                        WiFi phát chuẩn 802.11 a/b/g/n/ac tổng băng thông 1167Mbps (2.4Ghz 300Mbps + 5.0Ghz 867Mbps) có
-                        khả năng kết nối đồng thời 80-100 thiết bị truy cập, đáp ứng mọi nhu cầu down/upload nội dung
-                        Video 4K, chơi Game Online…
-                        <br><img class="aligncenter"
-                            src="https://wifistore.vn/wp-content/uploads/2021/08/wifi-op-tran-tenda-i24-2.jpg" alt=""
-                            srcset=""><br>
-                        Antenna gain công suất 4dBi giúp Tenda AP i24 phủ sóng trong bán kính 25 mét không vật cản và
-                        xuyên qua 1 lớp tường 10cm, phù hợp cho 1 không gian sử dụng tập trung
-
-                    </p>
-                    <a class="collapsed" data-toggle="collapse" href="#collapseSummary" aria-expanded="false"
-                        aria-controls="collapseSummary"></a>
-                </div>
-
-            </section>
-            <section class="comment row">
-                <div class="title">ĐÁNH GIÁ VÀ NHẬN XÉT</div>
-                <div class="user_comment-header">
-                    <div class="icon-user">
-                        <img width="50px" height="50px"
-                            src="https://pbs.twimg.com/profile_images/746460305396371456/4QYRblQD.jpg" alt="" srcset="">
-                    </div>
-                    <textarea name="" id="" cols="130" rows="5" placeholder="Nội dung"></textarea>
-                    <button class="button-send">Gửi</button>
-                </div>
-                <div class="user_comment">
-                    <div class="icon-user">
-                        <img width="50px" height="50px"
-                            src="https://pbs.twimg.com/profile_images/746460305396371456/4QYRblQD.jpg" alt="" srcset="">
-                    </div>
-                    <div class="user_comment-form" data-id="1">
-                        <div class="user_comment-name">Hoang Anh</div>
-                        <div class="user_comment-text"><span>
-                                Mình có samsung tab s7 plus muốn đổi fold 3. Tình trạng máy mình
-                                như mới hộp sạc bàn phím hãng đầy đủ
-                            </span>
-                            <button class="reply" data-id="1" onclick="openReply(this.getAttribute('data-id'))">Trả
-                                lời</button>
-
-                        </div>
-                        <div class="user_reply">
-                            <div class="icon-user">
-                                <img width="50px" height="50px"
-                                    src="https://pbs.twimg.com/profile_images/746460305396371456/4QYRblQD.jpg" alt=""
-                                    srcset="">
-                            </div>
-                            <textarea name="" id="" cols="123" rows="5" placeholder="Để lại câu trả lời"></textarea>
-                            <button class="button-send">Gửi</button>
-
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-        </div>
-    </section>
 
     <footer class="bg-white">
         <div class="footer-top">
@@ -3133,92 +3467,8 @@
         </div>
     </footer>
 
-
     <!-- script -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="./assets/slick/slick.min.js"></script>
-
-    <script type="text/javascript">
-        const $rootSingle = $(".cSlider--single");
-        const $rootNav = $(".cSlider--nav");
-
-        $rootSingle.slick({
-            slide: ".cSlider__item",
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            fade: false,
-            adaptiveHeight: true,
-            infinite: false,
-            useTransform: true,
-            speed: 400,
-            cssEase: "cubic-bezier(0.77, 0, 0.18, 1)",
-        });
-
-        $rootNav
-            .on("init", function (event, slick) {
-                $(this).find(".slick-slide.slick-current").addClass("is-active");
-            })
-            .slick({
-                slide: ".cSlider__item",
-                slidesToShow: 4,
-                slidesToScroll: 2,
-                dots: false,
-                focusOnSelect: false,
-                infinite: false,
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 5,
-                            slidesToScroll: 5,
-                        },
-                    },
-                    {
-                        breakpoint: 640,
-                        settings: {
-                            slidesToShow: 4,
-                            slidesToScroll: 4,
-                        },
-                    },
-                    {
-                        breakpoint: 420,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                        },
-                    },
-                ],
-            });
-
-        $rootSingle.on("afterChange", function (event, slick, currentSlide) {
-            $rootNav.slick("slickGoTo", currentSlide);
-            $rootNav.find(".slick-slide.is-active").removeClass("is-active");
-            $rootNav
-                .find('.slick-slide[data-slick-index="' + currentSlide + '"]')
-                .addClass("is-active");
-        });
-
-        $rootNav.on("click", ".slick-slide", function (event) {
-            event.preventDefault();
-            var goToSingleSlide = $(this).data("slick-index");
-
-            $rootSingle.slick("slickGoTo", goToSingleSlide);
-        });
-
-    </script> -->
     <script src="./js/lib-v1.js"></script>
-    <script src="./js/product_detail.js"></script>
     <!-- script -->
 </body>
 

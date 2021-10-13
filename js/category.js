@@ -147,7 +147,7 @@ function show_filter() {
 function start() {
   // click xem thêm
 
-  setTimeout(startAgain, 300);
+  setTimeout(startAgain, 500);
   function startAgain() {
     show_more(166);
 
