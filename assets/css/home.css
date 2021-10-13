@@ -411,6 +411,9 @@
   height: 50px;
   line-height: 50px;
   font-weight: 500;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
   bottom: 80px;
   border: 1px solid white;
   cursor: pointer;
