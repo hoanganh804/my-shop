@@ -288,6 +288,9 @@
     display: block !important;
     padding-left: 20px;
   }
+  .gitloi {
+    max-width: 0;
+  }
   header {
     max-width: 960px;
   }
