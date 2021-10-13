@@ -3,33 +3,34 @@
 
 <head>
     <title>my-shop</title>
-    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="content-language" content="vi-vn" />
-    <meta content="DOCUMENT" name="RESOURCE-TYPE" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="content-language" content="vi-vn" /> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="./assets/css/themify-icons.css" type="text/css" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://www.anphatpc.com.vn/template/anphat_2020v2/script/lib.css" />
 
     <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="./assets/slick/slick-theme.css" />
 
-
     <link rel="stylesheet" href="./assets/css/lib.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/web_pc.css" type="text/css" />
-    <link rel="stylesheet" href="./assets/css/category.css" type="text/css" />
-    <link rel="stylesheet" href="./assets/css/product_detail.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/home.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/css/header_res.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/css/detail_res.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/product_detail.css">
 
-    <meta http-equiv="content-language" content="vi" />
-
-    <!-- <script src="./js/category.js"></script> -->
 
 </head>
 
 <body>
+    <!-- header -->
     <header>
         <div class="header-text-top">
             <div class="container">
@@ -67,7 +68,9 @@
                         <a href="index.html" class="logo">
                             <img src="https://anphat.com.vn/media/banner/logo_mask2-ngang%20(1).png" alt="my-shop"
                                 class="logo-img" />
-
+                            <img width="40px" height="40px"
+                                src="https://cdn.thukyluat.vn/nhch-images//CauHoi_Hinh/9eb6abaa-8cda-456c-ad66-26ba4da23ffe.jpg"
+                                alt="my-shop" class="logo-img-fixed lazy" />
                         </a>
                     </h1>
                     <!-- search -->
@@ -84,7 +87,6 @@
                                 <option value="400">Máy in - TB văn phòng</option>
 
                                 <option value="1253">Linh kiện máy tính</option>
-
                             </select>
 
                             <div class="searh-form-container">
@@ -101,11 +103,11 @@
 
                     <!-- icon right -->
                     <div class="
-                header-icon-right
-                d-flex
-                align-items-center
-                justify-content-between
-              ">
+                  header-icon-right
+                  d-flex
+                  align-items-center
+                  justify-content-between
+                ">
                         <div class="item clearfix">
                             <a href="javascript:void(0);" title="Mua hàng online" class="header-icon-phone">
                                 <i class="icon icon-phone"></i>
@@ -151,17 +153,23 @@
                                 <span class="js-cart-count cart-count"> 0</span>
                             </a>
                         </div>
+                        <div class="item clearfix">
+
+                            <a href="#" data-toggle="modal" data-target="#modal-fullscreen"
+                                class="d-block position-relative icon-menu">
+                                <i class="ti-menu mr-0"></i>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- mennu -->
                     <div class="header-menu d-flex align-items-center">
                         <div class="header-menu-container">
-                            <a class="d-block font-weight-light text-white menu-title"
-                                style="font-size: 15px;cursor: pointer;">
+                            <a class="d-block font-weight-light text-white menu-title" style="font-size: 15px">
                                 <i class="fa fa-bars list-product"></i> DANH MỤC SẢN PHẨM
                             </a>
 
-                            <div class="header-menu-holder" style="display:none">
+                            <div class="header-menu-holder">
                                 <div class="item" data-id="395">
                                     <a href="may-tinh-xach-tay-laptop.html" class="pro-cate-1">
                                         <span class="cat-thumb-item" style="width: 35px; text-align: center">
@@ -1604,7 +1612,8 @@
                                                 <a href="https://www.anphatpc.com.vn/workstation-server-deep-learning-ai_dm1758.html"
                                                     class="cate-2"
                                                     title="Máy Workstation, Server Deep Learning - AI">Máy Workstation,
-                                                    Server Deep Learning - AI
+                                                    Server Deep
+                                                    Learning - AI
                                                 </a>
 
                                                 <div>
@@ -1642,31 +1651,32 @@
                                     </a>
 
                                     <!-- 
-                                     
-                                    
-                                
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                -->
+                                   
+                                  
+                              
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                              -->
 
                                     <div class="sub-menu no-big-img">
                                         <div class="cat-child-holder">
                                             <div class="cat-child-items">
                                                 <a href="https://www.anphatpc.com.vn/may-in.html" class="cate-2"
-                                                    title="Máy in các hãng">Máy in các hãng
+                                                    title="Máy in các hãng">Máy in
+                                                    các hãng
                                                 </a>
 
                                                 <div>
@@ -2016,7 +2026,8 @@
 
                                             <div class="cat-child-items">
                                                 <a href="https://www.anphatpc.com.vn/phan-mem_dm401.html" class="cate-2"
-                                                    title="Phần mềm">Phần mềm
+                                                    title="Phần mềm">Phần
+                                                    mềm
                                                 </a>
 
                                                 <div>
@@ -2623,13 +2634,13 @@
                         </div>
 
                         <div class="
-                  menu-text-right
-                  d-flex
-                  align-items-center
-                  justify-content-between
-                  font-weight-light
-                  text-13
-                ">
+                    menu-text-right
+                    d-flex
+                    align-items-center
+                    justify-content-between
+                    font-weight-light
+                    text-13
+                  ">
                             <a href="https://www.anphatpc.com.vn/san-pham-da-xem" target="_blank"
                                 class="header-history">
                                 Sản phẩm bạn đã xem
@@ -2651,9 +2662,9 @@
             </div>
         </div>
     </header>
+    <!-- header -->
 
-
-    <section class="product-detail-page container">
+    <section class="product-detail-page">
         <div class="container" style="padding: 0;">
             <div id="breadcrumb">
                 <ol class="ul clearfix">
@@ -2710,6 +2721,16 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
+                    </div>
+                    <div class="information">
+                        <ul>
+                            <li><span>Hãng sản xuất </span> <span>Laptop Acer</span></li>
+                            <li><span>Tên sản phẩm</span> <span>Acer Nitro 5 AMD AN515-45-R9SC NH.QBRSV.001</span></li>
+                            <li><span>Nhóm sản phẩm</span><span>Laptop | Acer Nitro 5 | Laptop gaming | Laptop RTX 30
+                                    series</span></li>
+                            <li><span>Bộ vi xử lý</span><span>AMD Ryzen™ 7-5800H</span></li>
+                            <li><span>Tốc độ</span><span>3.3GHz upto 4.4GHz, 8 cores 16 threads</span></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="product_detail col-lg-6 col-sm-12">
@@ -2862,13 +2883,84 @@
 
             </section>
 
+            <!-- slider-product_same -->
+            <section class="slider_product_same">
+                <div class="slider_product_same-header">SẢN PHẨM TƯƠNG TỰ</div>
+                <div class="slider slider_container">
+                    <div class="col_product_same">
+
+                        <div class="product_same_item">
+                            <img src="https://wifistore.vn/wp-content/uploads/2021/08/wifi-4g-alcatel-ee120-1-280x280.jpg"
+                                alt="" srcset="" />
+
+                        </div>
+                        <div class="name">Bộ phát WiFi 4G Huawei B312 có 1 cổng Lan/Wan, 1 chân anten gắn ngoài, kết nối
+                            32 thiết bị</div>
+                    </div>
+                    <div class="col_product_same">
+
+                        <div class="product_same_item">
+                            <img src="https://wifistore.vn/wp-content/uploads/2021/08/wifi-4g-alcatel-ee120-1-280x280.jpg"
+                                alt="" srcset="" />
+
+                        </div>
+                        <div class="name">Bộ phát WiFi 4G Huawei B312 có 1 cổng Lan/Wan, 1 chân anten gắn ngoài, kết nối
+                            32 thiết bị</div>
+
+                    </div>
+                    <div class="col_product_same">
+
+                        <div class="product_same_item">
+                            <img src="https://wifistore.vn/wp-content/uploads/2021/08/wifi-4g-alcatel-ee120-1-280x280.jpg"
+                                alt="" srcset="" />
+
+                        </div>
+                        <div class="name">Bộ phát WiFi 4G Huawei B312 có 1 cổng Lan/Wan, 1 chân anten gắn ngoài, kết nối
+                            32 thiết bị</div>
+                    </div>
+                    <div class="col_product_same">
+
+                        <div class="product_same_item">
+                            <img src="https://wifistore.vn/wp-content/uploads/2021/08/wifi-4g-alcatel-ee120-1-280x280.jpg"
+                                alt="" srcset="" />
+
+                        </div>
+                        <div class="name">Bộ phát WiFi 4G Huawei B312 có 1 cổng Lan/Wan, 1 chân anten gắn ngoài, kết nối
+                            32 thiết bị</div>
+                    </div>
+                    <div class="col_product_same">
+
+                        <div class="product_same_item">
+                            <img src="https://wifistore.vn/wp-content/uploads/2021/08/wifi-4g-alcatel-ee120-1-280x280.jpg"
+                                alt="" srcset="" />
+
+                        </div>
+                        <div class="name">Bộ phát WiFi 4G Huawei B312 có 1 cổng Lan/Wan, 1 chân anten gắn ngoài, kết nối
+                            32 thiết bị</div>
+                    </div>
+                    <div class="col_product_same">
+
+                        <div class="product_same_item">
+                            <img src="https://wifistore.vn/wp-content/uploads/2021/08/wifi-4g-alcatel-ee120-1-280x280.jpg"
+                                alt="" srcset="" />
+
+                        </div>
+                        <div class="name">Bộ phát WiFi 4G Huawei B312 có 1 cổng Lan/Wan, 1 chân anten gắn ngoài, kết nối
+                            32 thiết bị</div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- slider-product_same -->
+
         </div>
     </section>
 
+    <!-- footer -->
     <footer class="bg-white">
         <div class="footer-top">
             <div class="container">
-                <div class="d-flex justify-content-between">
+                <div class="footer_display">
                     <div class="item">
                         <p class="title">KẾT NỐI VỚI CHÚNG TÔI</p>
 
@@ -2920,7 +3012,7 @@
         <div class="footer-info">
             <div class="container">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-3 col-md-6 col-6 col-lg-3 col-sm-6">
                         <div class="item">
                             <p class="glo-title">THÔNG TIN CHUNG</p>
 
@@ -2945,7 +3037,7 @@
                         </div>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-3 col-md-6 col-6 col-lg-3 col-sm-6">
                         <div class="item">
                             <p class="glo-title">HỖ TRỢ KHÁCH HÀNG</p>
 
@@ -2964,7 +3056,7 @@
                         </div>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-3 col-md-6 col-6 col-lg-3 col-sm-6">
                         <div class="item">
                             <p class="glo-title">CHÍNH SÁCH CHUNG</p>
 
@@ -2989,7 +3081,7 @@
                         </div>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-3 col-md-6 col-6 col-lg-3 col-sm-6">
                         <div class="item">
                             <p class="glo-title">TỔNG ĐÀI HỖ TRỢ</p>
 
@@ -3013,7 +3105,7 @@
         <div class="footer-address">
             <div class="container">
                 <div class="row">
-                    <div class="col-4 mb-50">
+                    <div class="col-lg-4 col-md-6 col-sm-12  mb-50">
                         <div class="item">
                             <p class="title">Showroom Lê Thanh Nghị - HN</p>
 
@@ -3046,7 +3138,7 @@
                         </div>
                     </div>
 
-                    <div class="col-4 mb-50">
+                    <div class="col-lg-4 col-md-6 col-sm-12  mb-50">
                         <div class="item">
                             <p class="title">Showroom Lý Thường Kiệt - TPHCM</p>
 
@@ -3081,7 +3173,7 @@
                         </div>
                     </div>
 
-                    <div class="col-4 mb-50">
+                    <div class="col-lg-4 col-md-6 col-sm-12  mb-50">
                         <div class="item">
                             <p class="title">Showroom Thái Hà- HN</p>
 
@@ -3131,7 +3223,47 @@
             </div>
         </div>
     </footer>
+    <!-- footer -->
 
+    <!-- modal menu  -->
+    <div class="modal fade modal-fullscreen" id="modal-fullscreen" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Trang chủ</li>
+                        <li>Danh mục sản phẩm <i onclick="showMoreModal()" class="icon-more ti-angle-down"></i></li>
+                        <ul>
+                            <li>mays tinh</li>
+                            <li> may chu</li>
+                            <li>linh kien may tinh</li>
+                            <li>may in van phong</li>
+                        </ul>
+                        <li>Đăng nhập</li>
+                        <li>abc</li>
+                        <li>xyz</li>
+
+                    </ul>
+                </div>
+                <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- modal menu  -->
+
+    <div class="menu_cart">
+        <button class="menu_cart-buynow">MUA NGAY</button>
+        <button class="menu_cart-tragop">MUA TRẢ GÓP</button>
+        <button class="menu_cart-add">CHO VÀO GIỎ</button>
+    </div>
 
     <!-- script -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -3143,79 +3275,35 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="./assets/slick/slick.min.js"></script>
 
     <script type="text/javascript">
-        const $rootSingle = $(".cSlider--single");
-        const $rootNav = $(".cSlider--nav");
+        let slidesToShow = 3
+        if ($(window).width() <= 992) { slidesToShow = 3 }
+        if ($(window).width() <= 768) { slidesToShow = 2 }
 
-        $rootSingle.slick({
-            slide: ".cSlider__item",
-            slidesToShow: 1,
+        $(".slider_container").slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: slidesToShow,
             slidesToScroll: 1,
-            arrows: true,
-            fade: false,
-            adaptiveHeight: true,
-            infinite: false,
-            useTransform: true,
-            speed: 400,
-            cssEase: "cubic-bezier(0.77, 0, 0.18, 1)",
+            autoplay: true,
+            autoplaySpeed: 4000,
+            pauseOnHover: true,
+            centerMode: true,
+
+
+            prevArrow:
+                '<button class="slick-arrow ti-angle-left slick-arrow-prev"></button>',
+            nextArrow:
+                '<button class=" slick-arrow ti-angle-right slick-arrow-next"></button>',
+
         });
+    </script>
 
-        $rootNav
-            .on("init", function (event, slick) {
-                $(this).find(".slick-slide.slick-current").addClass("is-active");
-            })
-            .slick({
-                slide: ".cSlider__item",
-                slidesToShow: 4,
-                slidesToScroll: 2,
-                dots: false,
-                focusOnSelect: false,
-                infinite: false,
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 5,
-                            slidesToScroll: 5,
-                        },
-                    },
-                    {
-                        breakpoint: 640,
-                        settings: {
-                            slidesToShow: 4,
-                            slidesToScroll: 4,
-                        },
-                    },
-                    {
-                        breakpoint: 420,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                        },
-                    },
-                ],
-            });
-
-        $rootSingle.on("afterChange", function (event, slick, currentSlide) {
-            $rootNav.slick("slickGoTo", currentSlide);
-            $rootNav.find(".slick-slide.is-active").removeClass("is-active");
-            $rootNav
-                .find('.slick-slide[data-slick-index="' + currentSlide + '"]')
-                .addClass("is-active");
-        });
-
-        $rootNav.on("click", ".slick-slide", function (event) {
-            event.preventDefault();
-            var goToSingleSlide = $(this).data("slick-index");
-
-            $rootSingle.slick("slickGoTo", goToSingleSlide);
-        });
-
-    </script> -->
     <script src="./js/lib-v1.js"></script>
     <script src="./js/product_detail.js"></script>
     <!-- script -->
