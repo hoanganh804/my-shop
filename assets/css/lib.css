@@ -6282,3 +6282,7 @@ body.modal-open .mm-slideout {
 .list-product {
   cursor: pointer;
 }
+body {
+  box-sizing: border-box;
+}
+

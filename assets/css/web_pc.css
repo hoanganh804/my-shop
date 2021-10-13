@@ -1,13 +1,21 @@
 /* @import url("https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://www.anphatpc.com.vn/template/anphat_2020v2/script/lib.css"); */
+
 body {
   color: #222;
   font-family: "Roboto", sans-serif;
   background: #edeef2;
-  position: relative;
-  min-width: 1280px;
+  /* position: relative; */
+  width: 1280px;
+  width: 100%;
   font-size: 14px;
+}
+html {
+  width: 100%;
+}
+* {
+  margin: 0;
 }
 a {
   color: #222;
@@ -363,10 +371,10 @@ td {
 .icon-star.star-5 {
   background-position: 0 0;
 }
-.container {
+.container1 {
   padding: 0 10px;
-  max-width: 1200px;
-  min-width: 1200px;
+  max-width: 100%;
+  min-width: 100%;
 }
 .row {
   margin: 0 -10px;
@@ -4858,4 +4866,7 @@ span.ping {
 }
 .nd li {
   list-style: auto !important;
+}
+.container {
+  padding: 0;
 }
