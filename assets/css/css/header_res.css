@@ -281,6 +281,13 @@
     padding: 0;
     margin: 0;
   }
+  .header-search select {
+    font-size: 14px;
+  }
+  .icon-menu {
+    display: block !important;
+    padding-left: 20px;
+  }
   header {
     max-width: 960px;
   }
@@ -356,21 +363,24 @@
   body {
     margin: 0;
   }
+  .header-search select {
+    font-size: 14px;
+  }
   header {
     max-width: 100%;
   }
   header .item.clearfix {
     display: none;
   }
-  header .item.clearfix:last-child {
+  header .item.clearfix:nth-child(5) {
+    display: block;
+  }
+  header .item.clearfix:nth-child(4) {
     display: block;
   }
   header .header-menu-holder {
     display: none;
     padding: 2px 0;
-  }
-  header .header-menu {
-    display: none !important;
   }
   .header-main {
     -webkit-box-pack: center;

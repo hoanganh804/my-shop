@@ -1,5 +1,11 @@
 $hover_color_font_blue: #2196f3;
 
+.icon-menu {
+  color: white !important;
+  font-size: 24px;
+  display: none !important;
+}
+
 .slider_banner {
   display: flex;
   justify-content: flex-end;
@@ -9,6 +15,73 @@ $hover_color_font_blue: #2196f3;
     height: 400px;
     object-fit: cover;
   }
+}
+@mixin modal-fullscreen() {
+  padding: 0 !important;
+
+  .modal-dialog {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  .modal-content {
+    height: auto;
+    min-height: 100%;
+    border: 0 none;
+    border-radius: 0;
+  }
+}
+
+.modal-body {
+  padding: 0;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      border-top: 1px solid #ccc;
+      font-size: 24px;
+      height: 70px;
+      line-height: 70px;
+      padding-left: 20px;
+      font-weight: bold;
+      color: #7c7c7c;
+      i {
+        margin-left: 180px;
+      }
+    }
+    ul {
+      display: none;
+      li {
+        padding-left: 30px;
+        background-color: rgb(228, 228, 228);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .modal-fullscreen-xs-down {
+    @include modal-fullscreen();
+  }
+}
+
+@media (max-width: 991px) {
+  .modal-fullscreen-sm-down {
+    @include modal-fullscreen();
+  }
+}
+
+@media (max-width: 1199px) {
+  .modal-fullscreen-md-down {
+    @include modal-fullscreen();
+  }
+}
+
+.modal-fullscreen {
+  @include modal-fullscreen();
 }
 
 .daily_deal-container {

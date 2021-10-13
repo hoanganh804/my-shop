@@ -149,6 +149,13 @@
                 <span class="js-cart-count cart-count"> 0</span>
               </a>
             </div>
+            <div class="item clearfix">
+
+              <a href="#" data-toggle="modal" data-target="#modal-fullscreen"
+                class="d-block position-relative icon-menu">
+                <i class="ti-menu mr-0"></i>
+              </a>
+            </div>
           </div>
 
           <!-- mennu -->
@@ -2964,7 +2971,7 @@
     <div class="footer-info">
       <div class="container">
         <div class="row">
-          <div class="col-3 col-md-6 col-12 col-lg-3 col-sm-12">
+          <div class="col-3 col-md-6 col-6 col-lg-3 col-sm-6">
             <div class="item">
               <p class="glo-title">THÔNG TIN CHUNG</p>
 
@@ -2988,7 +2995,7 @@
             </div>
           </div>
 
-          <div class="col-3 col-md-6 col-12 col-lg-3 col-sm-12">
+          <div class="col-3 col-md-6 col-6 col-lg-3 col-sm-6">
             <div class="item">
               <p class="glo-title">HỖ TRỢ KHÁCH HÀNG</p>
 
@@ -3007,7 +3014,7 @@
             </div>
           </div>
 
-          <div class="col-3 col-md-6 col-12 col-lg-3 col-sm-12">
+          <div class="col-3 col-md-6 col-6 col-lg-3 col-sm-6">
             <div class="item">
               <p class="glo-title">CHÍNH SÁCH CHUNG</p>
 
@@ -3032,7 +3039,7 @@
             </div>
           </div>
 
-          <div class="col-3 col-md-6 col-12 col-lg-3 col-sm-12">
+          <div class="col-3 col-md-6 col-6 col-lg-3 col-sm-6">
             <div class="item">
               <p class="glo-title">TỔNG ĐÀI HỖ TRỢ</p>
 
@@ -3176,6 +3183,40 @@
   </footer>
   <!-- footer -->
 
+  <!-- modal menu  -->
+  <div class="modal fade modal-fullscreen" id="modal-fullscreen" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>Trang chủ</li>
+            <li>Danh mục sản phẩm <i onclick="showMoreModal()" class="icon-more ti-angle-down"></i></li>
+            <ul>
+              <li>mays tinh</li>
+              <li> may chu</li>
+              <li>linh kien may tinh</li>
+              <li>may in van phong</li>
+            </ul>
+            <li>Đăng nhập</li>
+            <li>abc</li>
+            <li>xyz</li>
+
+          </ul>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- modal menu  -->
+
   <!-- script -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -3212,6 +3253,23 @@
         '<button class=" slick-arrow ti-angle-right slick-arrow-next"></button>',
 
     });
+  </script>
+
+  <script type="text/javascript">
+    function showMoreModal() {
+      const list = document.querySelector('.modal-body ul ul')
+      const iconMore = document.querySelector('.modal-body ul li i ')
+      if (list.style.display === 'none' || list.style.display === '') {
+        list.style.display = 'block'
+        iconMore.style.transform = 'rotate(90deg)'
+      } else {
+        list.style.display = 'none'
+        iconMore.classList.remove = "ti-angle-up"
+        iconMore.classList.add = "ti-angle-down"
+      }
+
+    }
+
   </script>
 </body>
 
