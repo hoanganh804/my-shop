@@ -2,14 +2,18 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://www.anphatpc.com.vn/template/anphat_2020v2/script/lib.css"); */
 
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 body {
   color: #222;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Quicksand", sans-serif;
   background: #edeef2;
   /* position: relative; */
   width: 1280px;
   width: 100%;
   font-size: 14px;
+  /* font-weight: 300; */
 }
 html {
   width: 100%;
