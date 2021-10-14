@@ -512,10 +512,10 @@ $hover_color_font_blue: #2196f3;
         line-height: 50px;
         font-weight: 500;
 
-        bottom: 80px;
+        bottom: 100px;
         border: 1px solid white;
         cursor: pointer;
-
+        left: 0;
         display: none;
         &:hover {
           background-color: $hover_color_font_blue;

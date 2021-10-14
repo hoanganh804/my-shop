@@ -651,6 +651,10 @@ $hover_color_font_blue: #2196f3;
       right: 20px;
     }
   }
+
+  .cart_category .cart_category-product-item .add-to-cart {
+    bottom: 125px !important;
+  }
 }
 @media only screen and (max-width: 768px) {
   body {
