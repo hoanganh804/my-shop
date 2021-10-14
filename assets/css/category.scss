@@ -103,7 +103,7 @@ $hover_color_font_blue: #2196f3;
 
     &-img {
       object-fit: cover;
-      height: 300px;
+      height: 290px;
       width: 100%;
       cursor: pointer;
     }
@@ -120,24 +120,33 @@ $hover_color_font_blue: #2196f3;
         color: $hover_color_font_blue;
       }
     }
+    .discount {
+      color: white;
+      background-color: red;
+      padding: 0px 3px;
+      border-bottom-right-radius: 16px;
+      position: absolute;
+      top: 0;
+      width: 50px;
+      font-size: 18px;
+      font-weight: 500;
+      height: 30px;
+    }
     &-price {
       display: flex;
-      flex-direction: row;
+      // flex-direction: column;
+      align-items: center;
       &-now {
-        margin-left: 6px;
         color: chocolate;
-        font-weight: bold;
+
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
       }
       &-prev {
         color: rgb(118, 118, 118);
         margin: 0px 10px;
         text-decoration: line-through;
-      }
-      .discount {
-        color: white;
-        background-color: red;
-        padding: 0px 3px;
-        border-radius: 10px;
       }
     }
     .add-to-cart {
@@ -183,16 +192,6 @@ $hover_color_font_blue: #2196f3;
       display: none;
 
       &::after {
-        // content: "Sắp về";
-        // font-size: 16px;
-        // font-weight: 500;
-        // color: rgb(248, 248, 248);
-        // line-height: 40px;
-        // position: absolute;
-        // left: 2px;
-        // background-image: url("https://mihanoi.vn/wp-content/uploads/2021/05/icon-sp-sap-ve.png");
-        // width: 45px;
-        // height: 50px;
         content: "Sắp về";
         height: 56px;
         position: absolute;

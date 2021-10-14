@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .icon-menu {
   color: white !important;
   font-size: 24px;
@@ -178,7 +179,7 @@
   border-left: 1px solid rgba(215, 215, 215, 0.345);
   padding: 0;
   background-color: white;
-  cursor: pointer;
+  border-bottom: 1px solid #ccc;
 }
 
 .daily_deal-container .daily_deal-container-product .daily_deal .product_item:first-child {
@@ -191,10 +192,14 @@
   z-index: 1;
 }
 
+.daily_deal-container .daily_deal-container-product .daily_deal .product_item:hover .add-to-cart {
+  display: block;
+}
+
 .daily_deal-container .daily_deal-container-product .daily_deal .product_item-img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 300px;
+  height: 290px;
   width: 100%;
   cursor: pointer;
 }
@@ -214,20 +219,35 @@
   color: #2196f3;
 }
 
+.daily_deal-container .daily_deal-container-product .daily_deal .product_item .discount {
+  color: white;
+  background-color: red;
+  padding: 0px 3px;
+  border-bottom-right-radius: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  height: 30px;
+}
+
 .daily_deal-container .daily_deal-container-product .daily_deal .product_item-price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .daily_deal-container .daily_deal-container-product .daily_deal .product_item-price-now {
-  margin-left: 6px;
   color: chocolate;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin-left: 10px;
 }
 
 .daily_deal-container .daily_deal-container-product .daily_deal .product_item-price-prev {
@@ -236,11 +256,79 @@
   text-decoration: line-through;
 }
 
-.daily_deal-container .daily_deal-container-product .daily_deal .product_item-price .discount {
+.daily_deal-container .daily_deal-container-product .daily_deal .product_item .add-to-cart {
+  position: absolute;
+  background-color: #ecebea;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 500;
+  bottom: 80px;
+  border: 1px solid white;
+  cursor: pointer;
+  display: none;
+}
+
+.daily_deal-container .daily_deal-container-product .daily_deal .product_item .add-to-cart:hover {
+  background-color: #2196f3;
   color: white;
-  background-color: red;
-  padding: 0px 3px;
-  border-radius: 10px;
+}
+
+.daily_deal-container .daily_deal-container-product .daily_deal .product_item .sold-out {
+  position: absolute;
+  height: 60px;
+  top: 46%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #ffb56b;
+  width: 100%;
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
+  opacity: 0.9;
+  line-height: 60px;
+  display: none;
+}
+
+.daily_deal-container .daily_deal-container-product .daily_deal .product_item .comming-soon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.daily_deal-container .daily_deal-container-product .daily_deal .product_item .comming-soon::after {
+  content: "Sắp về";
+  height: 56px;
+  position: absolute;
+  width: 50px;
+  background-image: url("https://mihanoi.vn/wp-content/uploads/2021/05/icon-sp-sap-ve.png");
+  background-size: cover;
+  z-index: 999;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+  word-spacing: 3px;
+  padding: 2px;
+}
+
+.daily_deal-container .daily_deal-container-product .daily_deal .product_item .icon-like {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #858585;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.daily_deal-container .daily_deal-container-product .daily_deal .product_item .icon-like:hover {
+  color: red;
 }
 
 .slider_category {
@@ -464,7 +552,7 @@
 .cart_category .cart_category-product-item-img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 300px;
+  height: 290px;
   width: 100%;
   cursor: pointer;
 }
@@ -484,33 +572,41 @@
   color: #2196f3;
 }
 
+.cart_category .cart_category-product-item .discount {
+  color: white;
+  background-color: red;
+  padding: 0px 3px;
+  border-bottom-right-radius: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  height: 30px;
+}
+
 .cart_category .cart_category-product-item-price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cart_category .cart_category-product-item-price-now {
-  margin-left: 6px;
   color: chocolate;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin-left: 10px;
 }
 
 .cart_category .cart_category-product-item-price-prev {
   color: #767676;
   margin: 0px 10px;
   text-decoration: line-through;
-}
-
-.cart_category .cart_category-product-item-price .discount {
-  color: white;
-  background-color: red;
-  padding: 0px 3px;
-  border-radius: 10px;
 }
 
 .cart_category .cart_category-product-item .add-to-cart {
@@ -522,9 +618,6 @@
   height: 50px;
   line-height: 50px;
   font-weight: 500;
-  right: 50%;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
   bottom: 80px;
   border: 1px solid white;
   cursor: pointer;
@@ -534,6 +627,47 @@
 .cart_category .cart_category-product-item .add-to-cart:hover {
   background-color: #2196f3;
   color: white;
+}
+
+.cart_category .cart_category-product-item .sold-out {
+  position: absolute;
+  height: 60px;
+  top: 46%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #ffb56b;
+  width: 100%;
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
+  opacity: 0.9;
+  line-height: 60px;
+  display: none;
+}
+
+.cart_category .cart_category-product-item .comming-soon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.cart_category .cart_category-product-item .comming-soon::after {
+  content: "Sắp về";
+  height: 56px;
+  position: absolute;
+  width: 50px;
+  background-image: url("https://mihanoi.vn/wp-content/uploads/2021/05/icon-sp-sap-ve.png");
+  background-size: cover;
+  z-index: 999;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+  word-spacing: 3px;
+  padding: 2px;
 }
 
 .cart_category .cart_category-product-item .icon-like {
@@ -761,5 +895,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.paging .load-more-product {
+  cursor: pointer;
+}
+
+.paging .load-more-product:hover {
+  color: #2196f3;
 }
 /*# sourceMappingURL=home.css.map */

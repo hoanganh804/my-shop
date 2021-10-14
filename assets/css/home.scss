@@ -139,18 +139,22 @@ $hover_color_font_blue: #2196f3;
         border-left: 1px solid rgba(215, 215, 215, 0.345);
         padding: 0;
         background-color: white;
-        cursor: pointer;
+        border-bottom: 1px solid #ccc;
+
         &:first-child {
           border-left: none;
         }
         &:hover {
           box-shadow: 0px 0px 10px 1px rgba(160, 160, 160, 0.749);
           z-index: 1;
+          .add-to-cart {
+            display: block;
+          }
         }
 
         &-img {
           object-fit: cover;
-          height: 300px;
+          height: 290px;
           width: 100%;
           cursor: pointer;
         }
@@ -167,24 +171,105 @@ $hover_color_font_blue: #2196f3;
             color: $hover_color_font_blue;
           }
         }
+        .discount {
+          color: white;
+          background-color: red;
+          padding: 0px 3px;
+          border-bottom-right-radius: 16px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 50px;
+          font-size: 18px;
+          font-weight: 500;
+          height: 30px;
+        }
         &-price {
           display: flex;
-          flex-direction: row;
+          // flex-direction: column;
+          align-items: center;
           &-now {
-            margin-left: 6px;
             color: chocolate;
-            font-weight: bold;
+
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            margin-left: 10px;
           }
           &-prev {
             color: rgb(118, 118, 118);
             margin: 0px 10px;
             text-decoration: line-through;
           }
-          .discount {
+        }
+        .add-to-cart {
+          position: absolute;
+          background-color: #ecebea;
+          width: 100%;
+          text-align: center;
+          font-size: 20px;
+          height: 50px;
+          line-height: 50px;
+          font-weight: 500;
+
+          bottom: 80px;
+          border: 1px solid white;
+          cursor: pointer;
+
+          display: none;
+          &:hover {
+            background-color: $hover_color_font_blue;
             color: white;
-            background-color: red;
-            padding: 0px 3px;
-            border-radius: 10px;
+          }
+        }
+        .sold-out {
+          position: absolute;
+          height: 60px;
+          top: 46%;
+          text-align: center;
+          font-weight: 500;
+          font-size: 20px;
+          background-color: #ffb56b;
+          width: 100%;
+          transform: translateY(-70%);
+          opacity: 0.9;
+          line-height: 60px;
+          display: none;
+        }
+        .comming-soon {
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: none;
+
+          &::after {
+            content: "Sắp về";
+            height: 56px;
+            position: absolute;
+            width: 50px;
+            background-image: url("https://mihanoi.vn/wp-content/uploads/2021/05/icon-sp-sap-ve.png");
+            background-size: cover;
+            z-index: 999;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            line-height: 20px;
+            word-spacing: 3px;
+            padding: 2px;
+          }
+        }
+        .icon-like {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          font-size: 20px;
+          color: rgb(133, 133, 133);
+          font-weight: bold;
+          cursor: pointer;
+          &:hover {
+            color: red;
           }
         }
       }
@@ -366,7 +451,7 @@ $hover_color_font_blue: #2196f3;
 
       &-img {
         object-fit: cover;
-        height: 300px;
+        height: 290px;
         width: 100%;
         cursor: pointer;
       }
@@ -383,27 +468,37 @@ $hover_color_font_blue: #2196f3;
           color: $hover_color_font_blue;
         }
       }
+      .discount {
+        color: white;
+        background-color: red;
+        padding: 0px 3px;
+        border-bottom-right-radius: 16px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        font-size: 18px;
+        font-weight: 500;
+        height: 30px;
+      }
       &-price {
         display: flex;
-        flex-direction: row;
+        // flex-direction: column;
+        align-items: center;
         &-now {
-          margin-left: 6px;
           color: chocolate;
-          font-weight: bold;
+
+          font-size: 18px;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+          margin-left: 10px;
         }
         &-prev {
           color: rgb(118, 118, 118);
           margin: 0px 10px;
           text-decoration: line-through;
         }
-        .discount {
-          color: white;
-          background-color: red;
-          padding: 0px 3px;
-          border-radius: 10px;
-        }
       }
-
       .add-to-cart {
         position: absolute;
         background-color: #ecebea;
@@ -413,8 +508,7 @@ $hover_color_font_blue: #2196f3;
         height: 50px;
         line-height: 50px;
         font-weight: 500;
-        right: 50%;
-        transform: translateX(50%);
+
         bottom: 80px;
         border: 1px solid white;
         cursor: pointer;
@@ -423,6 +517,44 @@ $hover_color_font_blue: #2196f3;
         &:hover {
           background-color: $hover_color_font_blue;
           color: white;
+        }
+      }
+      .sold-out {
+        position: absolute;
+        height: 60px;
+        top: 46%;
+        text-align: center;
+        font-weight: 500;
+        font-size: 20px;
+        background-color: #ffb56b;
+        width: 100%;
+        transform: translateY(-70%);
+        opacity: 0.9;
+        line-height: 60px;
+        display: none;
+      }
+      .comming-soon {
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+
+        &::after {
+          content: "Sắp về";
+          height: 56px;
+          position: absolute;
+          width: 50px;
+          background-image: url("https://mihanoi.vn/wp-content/uploads/2021/05/icon-sp-sap-ve.png");
+          background-size: cover;
+          z-index: 999;
+          color: white;
+          font-size: 16px;
+          text-align: center;
+          line-height: 20px;
+          word-spacing: 3px;
+          padding: 2px;
         }
       }
       .icon-like {
@@ -627,4 +759,13 @@ $hover_color_font_blue: #2196f3;
 
 .footer_display {
   display: flex;
+}
+
+.paging {
+  .load-more-product {
+    cursor: pointer;
+    &:hover {
+      color: $hover_color_font_blue;
+    }
+  }
 }
