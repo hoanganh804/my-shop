@@ -16,6 +16,9 @@
   .choose-price-holder {
     display: none;
   }
+  .list-product-item .add-to-cart {
+    bottom: 104px !important;
+  }
 }
 
 @media only screen and (max-width: 992px) {

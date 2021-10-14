@@ -337,4 +337,9 @@
 .pro-tag-container {
   border-radius: 10px;
 }
+
+.list-product-item-name {
+  font-size: 18px;
+  font-weight: 600 !important;
+}
 /*# sourceMappingURL=category.css.map */
