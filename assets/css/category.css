@@ -1,3 +1,8 @@
+@charset "UTF-8";
+.header-menu-container .header-menu-holder {
+  display: none;
+}
+
 .list-product {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -146,6 +151,47 @@
   color: white;
 }
 
+.list-product-item .sold-out {
+  position: absolute;
+  height: 60px;
+  top: 46%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #ffb56b;
+  width: 100%;
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
+  opacity: 0.9;
+  line-height: 60px;
+  display: none;
+}
+
+.list-product-item .comming-soon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.list-product-item .comming-soon::after {
+  content: "Sắp về";
+  height: 56px;
+  position: absolute;
+  width: 50px;
+  background-image: url("https://mihanoi.vn/wp-content/uploads/2021/05/icon-sp-sap-ve.png");
+  background-size: cover;
+  z-index: 999;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+  word-spacing: 3px;
+  padding: 2px;
+}
+
 .list-product-item .icon-like {
   position: absolute;
   top: 10px;
@@ -158,6 +204,22 @@
 
 .list-product-item .icon-like:hover {
   color: red;
+}
+
+.list-product .sold-out-active .sold-out {
+  display: block;
+}
+
+.list-product .sold-out-active .add-to-cart {
+  display: none;
+}
+
+.list-product .comming-soon-active .comming-soon {
+  display: block;
+}
+
+.list-product .comming-soon-active .add-to-cart {
+  display: none;
 }
 
 .news {
@@ -182,6 +244,9 @@
   border-top-right-radius: 10px;
   font-weight: bold;
   font-size: 20px;
+  -webkit-box-shadow: 5px 5px 10px #ccc;
+          box-shadow: 5px 5px 10px #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .news-header-view-all {
@@ -198,12 +263,13 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   overflow: hidden;
+  -webkit-box-shadow: 0px 0px 10px #ccc;
+          box-shadow: 0px 0px 10px #ccc;
 }
 
 .news_content .news-item {
   padding: 16px;
   padding-left: 4px;
-  height: 380px;
   background-color: white;
 }
 
