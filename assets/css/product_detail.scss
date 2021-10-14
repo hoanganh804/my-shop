@@ -31,6 +31,9 @@ $hover_color_font_blue: #2196f3;
                 flex: 1;
                 max-width: 340px;
               }
+              &:first-child {
+                font-size: 18px;
+              }
             }
             &:nth-child(2) {
               background-color: rgb(226, 226, 226);
@@ -45,7 +48,7 @@ $hover_color_font_blue: #2196f3;
     .product_detail {
       &-name {
         font-size: 26px;
-        font-weight: 500;
+        font-weight: bold;
         margin-bottom: 20px;
       }
       &-price {
@@ -55,9 +58,9 @@ $hover_color_font_blue: #2196f3;
         align-items: center;
         margin-bottom: 20px;
         &-now {
-          color: #ce0707;
+          color: chocolate;
           padding-right: 28px;
-          font-size: 26px;
+          font-size: 28px;
         }
         &-prev {
           color: #999999;
@@ -70,13 +73,16 @@ $hover_color_font_blue: #2196f3;
         ul {
           margin-bottom: 20px;
           li {
-            font-size: 14px;
+            font-size: 16px;
             margin-bottom: 4px;
           }
         }
       }
       .variant-item {
         margin-bottom: 20px;
+        .d-block {
+          font-size: 16px;
+        }
       }
       &-cart {
         // display: flex;
@@ -125,7 +131,7 @@ $hover_color_font_blue: #2196f3;
       font-weight: bold;
     }
     #summary {
-      font-size: 14px;
+      font-size: 16px;
       line-height: 1.5;
       position: relative;
       margin-bottom: 50px;

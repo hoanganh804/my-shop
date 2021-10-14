@@ -23,7 +23,7 @@ const changeProductSame = (id) => {
     spanItems[0].classList.add("same-header-active");
     imgLinks.map((imgLink) => {
       imgLink.src =
-        "https://anphat.com.vn/media/product/250_19878_ub_uap_ac_lite_front_1000.png";
+        "https://wifistore.vn/wp-content/uploads/2021/08/wifi-4g-alcatel-ee120-1-280x280.jpg";
     });
   }
   if (id === 2) {
