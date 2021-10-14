@@ -10,14 +10,17 @@
   .slider_product_same .slider_container .col_product_same .name {
     width: 240px !important;
   }
+  .row {
+    width: 100%;
+  }
   .product-detail-page .product-detail-container .product_detail-cart .button-buynow {
-    padding: 0 170px !important;
+    padding: 0 150px !important;
   }
   .product-detail-page .product-detail-container .product_detail-cart .button-tragop {
-    padding: 0 50px !important;
+    padding: 0 40px !important;
   }
   .product-detail-page .product-detail-container .product_detail-cart .button-add {
-    padding: 0 50px !important;
+    padding: 0 40px !important;
   }
   .product-detail-page .comment .title {
     width: 100%;
