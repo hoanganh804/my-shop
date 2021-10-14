@@ -94,7 +94,7 @@ $hover_color_font_blue: #2196f3;
   }
 
   .news_content {
-    padding: 0px 10px;
+    // padding: 0px 10px;
   }
   footer {
     .footer-top {
@@ -116,6 +116,10 @@ $hover_color_font_blue: #2196f3;
   html {
     width: 540px;
     // margin: 16px !important;
+  }
+
+  .footer_display {
+    margin-left: 20px;
   }
 
   .row {

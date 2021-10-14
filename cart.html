@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./assets/css/lib.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/web_pc.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/moblie.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/home.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/cart.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/css/header_res.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/css/cart_res.css">
@@ -63,8 +64,7 @@
                 <div class="d-flex flex-wrap align-items-center header-main">
                     <h1 class="m-0">
                         <a href="index.html" class="logo">
-                            <img src="https://anphat.com.vn/media/banner/logo_mask2-ngang%20(1).png" alt="my-shop"
-                                class="logo-img" />
+                            <img src="#" class="logo-img" />
                             <img width="40px" height="40px"
                                 src="https://cdn.thukyluat.vn/nhch-images//CauHoi_Hinh/9eb6abaa-8cda-456c-ad66-26ba4da23ffe.jpg"
                                 alt="my-shop" class="logo-img-fixed lazy" />
@@ -170,8 +170,7 @@
                                 <div class="item" data-id="395">
                                     <a href="may-tinh-xach-tay-laptop.html" class="pro-cate-1">
                                         <span class="cat-thumb-item" style="width: 35px; text-align: center">
-                                            <img src="https://anphat.com.vn/media/category/cat_b706c0f50035bddb63ca6e91efef7703.png"
-                                                alt="Máy tính xách tay - Laptop" />
+                                            <img src="#" alt="Máy tính xách tay - Laptop" />
                                         </span>
 
                                         <span class="title" title="Máy tính xách tay - Laptop">
@@ -931,8 +930,7 @@
                                 <div class="item" data-id="394">
                                     <a href="https://www.anphatpc.com.vn/may-tinh-may-chu.html" class="pro-cate-1">
                                         <span class="cat-thumb-item" style="width: 35px; text-align: center">
-                                            <img src="https://anphat.com.vn/media/category/cat_a2e098b9730b13b0f4a5fa64ee45901c.png"
-                                                alt="Máy tính - Máy chủ" />
+                                            <img src="#" alt="Máy tính - Máy chủ" />
                                         </span>
 
                                         <span class="title" title="Máy tính - Máy chủ">
@@ -1638,8 +1636,7 @@
                                 <div class="item" data-id="400">
                                     <a href="https://www.anphatpc.com.vn/thiet-bi-van-phong.html" class="pro-cate-1">
                                         <span class="cat-thumb-item" style="width: 35px; text-align: center">
-                                            <img src="https://anphat.com.vn/media/category/cat_1073e9906b9dd89e0e453d1bc5ec4212.png"
-                                                alt="Máy in - TB văn phòng" />
+                                            <img src="#" alt="Máy in - TB văn phòng" />
                                         </span>
 
                                         <span class="title" title="Máy in - TB văn phòng">
@@ -2198,8 +2195,7 @@
                                 <div class="item" data-id="1253">
                                     <a href="https://www.anphatpc.com.vn/linh-kien-may-tinh.html" class="pro-cate-1">
                                         <span class="cat-thumb-item" style="width: 35px; text-align: center">
-                                            <img src="https://anphat.com.vn/media/category/cat_cf48adbcc24dd52850830b617fdce703.png"
-                                                alt="Linh kiện máy tính" />
+                                            <img src="#" alt="Linh kiện máy tính" />
                                         </span>
 
                                         <span class="title" title="Linh kiện máy tính">
@@ -2708,8 +2704,7 @@
                         <tr class="js-item-row row" data-variant_id="0" data-item_id="34019" data-item_type="product"
                             data-check="">
                             <td class='col-md-5 col-5 col-lg-2 col-xl-2 cart-product-img' width="75">
-                                <a href="/may-tinh-choi-game-pcap-asus-tuf-pro-1_id34019.html"><img
-                                        src="https://anphat.com.vn/media/product/120_34019_dsc09480.JPG"
+                                <a href="/may-tinh-choi-game-pcap-asus-tuf-pro-1_id34019.html"><img src="#"
                                         style="border:solid 1px #ccc;" /> </a>
                                 <p class="text-center"><a href="javascript:;" class="delete-from-cart"><img width='30px'
                                             style="margin-top:8px"
@@ -3451,6 +3446,51 @@
     </footer>
     <!-- footer -->
 
+
+    <!-- modal menu  -->
+    <div class="modal fade modal-fullscreen" id="modal-fullscreen" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Trang chủ</li>
+                        <li>Danh mục sản phẩm <i onclick="showMoreModal()" class="icon-more ti-angle-down"></i></li>
+                        <ul>
+                            <li>mays tinh</li>
+                            <li> may chu</li>
+                            <li>linh kien may tinh</li>
+                            <li>may in van phong</li>
+                        </ul>
+                        <li>Đăng nhập</li>
+                        <li>abc</li>
+                        <li>xyz</li>
+
+                    </ul>
+                </div>
+                <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- modal menu  -->
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <!-- script -->
     <script src="./js/lib-v1.js"></script>
     <!-- script -->

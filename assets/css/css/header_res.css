@@ -89,9 +89,6 @@
   .col.cart_category-product-item {
     padding: 10px;
   }
-  .news_content {
-    padding: 0px 10px;
-  }
   footer .footer-top .item:last-child {
     display: none;
   }
@@ -107,6 +104,9 @@
   }
   html {
     width: 540px;
+  }
+  .footer_display {
+    margin-left: 20px;
   }
   .row {
     padding: 0;

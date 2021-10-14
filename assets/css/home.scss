@@ -382,6 +382,7 @@ $hover_color_font_blue: #2196f3;
           font-weight: 500;
           line-height: 16px;
           font-size: 15px;
+          cursor: pointer;
           &:hover {
             color: $hover_color_font_blue;
           }

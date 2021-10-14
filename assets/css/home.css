@@ -467,6 +467,7 @@
   font-weight: 500;
   line-height: 16px;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .cart_category .cart_category-header ul li a:hover {

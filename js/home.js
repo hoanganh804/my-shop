@@ -6,8 +6,7 @@ const changeCategory = (name) => {
   ];
   if (name === 1) {
     linkImgs.map((linkImg) => {
-      linkImg.src =
-        "https://bizweb.dktcdn.net/thumb/large/100/371/004/products/btcalm1024x10242x.jpg?v=1573305666657";
+      linkImg.src = "./assets/img/product_watch.jpeg";
     });
   }
   if (name === 2) {
