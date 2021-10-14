@@ -701,6 +701,9 @@
   footer .footer-info .item ul .email::before {
     content: none;
   }
+  footer .footer-top .title {
+    width: 200px;
+  }
   .col.product_item:nth-child(3) {
     display: none;
   }
