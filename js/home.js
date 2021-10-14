@@ -13,10 +13,22 @@ const changeCategory = (name) => {
   if (name === 2) {
     linkImgs.map((linkImg) => {
       linkImg.src =
-        "https://evo-market.mysapo.net/tissot-t109-210-33-031-00-nu-kinh-sapphire-quartz-pin-day-kim-loai";
+        "https://bizweb.dktcdn.net/thumb/large/100/371/004/products/btcalm1024x10242x.jpg?v=1573305666657";
     });
   }
   if (name === 3) {
+    linkImgs.map((linkImg) => {
+      linkImg.src =
+        "https://bizweb.dktcdn.net/thumb/large/100/371/004/products/donghomvmtblacklinkmaster.jpg?v=1573305657020";
+    });
+  }
+  if (name === 4) {
+    linkImgs.map((linkImg) => {
+      linkImg.src =
+        "https://bizweb.dktcdn.net/thumb/large/100/371/004/products/btrefined1024x10242x.jpg?v=1573305663893";
+    });
+  }
+  if (name === 5) {
     linkImgs.map((linkImg) => {
       linkImg.src =
         "https://bizweb.dktcdn.net/thumb/large/100/371/004/products/donghomvmtblacklinkmaster.jpg?v=1573305657020";
