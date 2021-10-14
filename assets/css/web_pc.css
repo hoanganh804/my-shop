@@ -3,6 +3,10 @@
 @import url("https://www.anphatpc.com.vn/template/anphat_2020v2/script/lib.css"); */
 
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+/* @font-face {
+  font-family: "UTM_Avo", sans-serif;
+  src: url(../font_UTM/UTM\ Avo.ttf);
+} */
 body {
   color: #222;
   /* font-family: "Roboto", sans-serif; */

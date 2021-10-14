@@ -302,6 +302,7 @@ $hover_color_font_blue: #2196f3;
 
     span {
       margin-left: 20px;
+      cursor: pointer;
       &:hover {
         color: #2196f3;
       }

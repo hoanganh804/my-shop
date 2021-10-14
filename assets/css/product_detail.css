@@ -369,6 +369,7 @@
 
 .slider_product_same-header span {
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .slider_product_same-header span:hover {
