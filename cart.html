@@ -3196,6 +3196,23 @@
     <!-- script -->
     <script src="./js/lib-v1.js"></script>
     <!-- script -->
+    <script type="text/javascript">
+        function showMoreModal() {
+            const list = document.querySelector('.modal-body ul ul')
+            const iconMore = document.querySelector('.modal-body ul li i ')
+            if (list.style.display === 'none' || list.style.display === '') {
+                list.style.display = 'block'
+                iconMore.style.transform = 'rotate(90deg)'
+            } else {
+                list.style.display = 'none'
+                iconMore.classList.remove = "ti-angle-up"
+                iconMore.classList.add = "ti-angle-down"
+            }
+
+        }
+
+    </script>
+
 </body>
 
 </html>
