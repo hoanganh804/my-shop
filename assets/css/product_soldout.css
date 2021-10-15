@@ -1,0 +1,49 @@
+.message-sold-out {
+  background-color: #f5f6f7;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.message-sold-out i {
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.form-send-sold-out {
+  border-radius: 8px;
+}
+
+.form-send-sold-out .title {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form-send-sold-out .info-sold-out input {
+  height: 60px;
+  margin: 5px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-send-sold-out .info-sold-out input:last-child {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=product_soldout.css.map */

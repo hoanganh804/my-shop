@@ -1,0 +1,44 @@
+.main-container {
+  background-image: url("https://giaohang.shop/assets/img/register-background.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .form-register {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 10px;
+    .title {
+      color: #439eff;
+      font-size: 44px;
+      font-weight: 600;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    input {
+      height: 60px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding-left: 20px;
+    }
+    button {
+      height: 60px;
+      margin-bottom: 10px;
+      background-image: linear-gradient(
+        to right,
+        rgb(126, 124, 255),
+        rgb(37, 59, 255)
+      );
+      border: none;
+      border-radius: 6px;
+      font-size: 20px;
+      font-weight: 600;
+      color: white;
+    }
+  }
+}

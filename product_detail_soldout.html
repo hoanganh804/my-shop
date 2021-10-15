@@ -1,0 +1,3046 @@
+<!DOCTYPE html>
+<html lang="vn" itemscope itemtype="https://schema.org/WebPage">
+
+<head>
+    <title>my-shop</title>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width = device-width, init-scale = 1, Maximum-scale = 1, user-scaleable = 0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="./assets/css/lib.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/web_pc.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/home.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/css/header_res.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/css/detail_res.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/product_detail.css">
+    <link rel="stylesheet" href="./assets/css/product_soldout.css">
+    <link rel="stylesheet" href="./assets/css/css/product_soldout_res.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="header-text-top">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between text-13">
+                    <div class="address-left clearfix">
+                        <div class="pulse-icon">
+                            <div class="icon-wrap"></div>
+                            <div class="elements">
+                                <div class="pulse pulse-1"></div>
+                            </div>
+                        </div>
+
+                        <p class="m-0 float-left">
+                            <marquee>Hà Nội: 49 Thái Hà và 151 Lê Thanh Nghị　TPHCM: 158 - 160 Lý
+                                Thường Kiệt và 84T/14 Trần Đình Xu</marquee>
+                        </p>
+                    </div>
+
+                    <div class="text-title">
+                        <a href="#" class="map-title">
+                            <i class="fa fa-map-marker text-16 pr-1"></i> Hệ thống Showroom
+                        </a>
+                        <a href="" class="icon-video"> Video </a>
+                        <a href="#" class="icon-news"> Tin tức </a>
+                        <a href="" class="icon-print"> In hoá đơn điện tử </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main-container">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center header-main">
+                    <h1 class="m-0">
+                        <a href="index.html" class="logo">
+                            <img src="https://anphat.com.vn/media/banner/logo_mask2-ngang%20(1).png" alt="my-shop"
+                                class="logo-img" />
+                            <img width="40px" height="40px"
+                                src="https://cdn.thukyluat.vn/nhch-images//CauHoi_Hinh/9eb6abaa-8cda-456c-ad66-26ba4da23ffe.jpg"
+                                alt="my-shop" class="logo-img-fixed lazy" />
+                        </a>
+                    </h1>
+                    <!-- search -->
+                    <div class="header-search">
+                        <form method="get" action="/tim" enctype="multipart/form-data"
+                            class="clearfix search-form bg-white">
+                            <select name="scat_id">
+                                <option value="">Tất cả danh mục</option>
+
+                                <option value="395">Máy tính xách tay - Laptop</option>
+
+                                <option value="394">Máy tính - Máy chủ</option>
+
+                                <option value="400">Máy in - TB văn phòng</option>
+
+                                <option value="1253">Linh kiện máy tính</option>
+                            </select>
+
+                            <div class="searh-form-container">
+                                <input type="text" id="js-search" class="text_search" value="" name="q"
+                                    placeholder="Tìm kiếm sản phẩm..." autocomplete="off" />
+                                <button type="submit" class="submit-search">
+                                    <i class="fa fa-search"></i> Tìm kiếm
+                                </button>
+                            </div>
+                        </form>
+
+                        <div class="autocomplete-suggestions"></div>
+                    </div>
+
+                    <!-- icon right -->
+                    <div class="
+              header-icon-right
+              d-flex
+              align-items-center
+              justify-content-between
+            ">
+                        <div class="item clearfix">
+                            <a href="javascript:void(0);" title="Mua hàng online" class="header-icon-phone">
+                                <i class="icon icon-phone"></i>
+
+                                <p class="icon-text m-0" style="line-height: 1.2">
+                                    <b><span class="text-15 d-block">09234 66 999</span> </b>
+                                    <b class="text-15 d-block"> 1900 0323 </b>
+                                </p>
+                            </a>
+
+                            <a href="#" title="Hệ thống Showroom" class="header-item-showroom">
+                                <i class="icon icon-showroom"></i>
+
+                                <p class="icon-text m-0" style="line-height: 1.2">
+                                    <span class="text-12 d-block"> Hệ thống </span>
+                                    <b class="text-16 d-block"> Showroom </b>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="item clearfix">
+                            <a href="#" title="Xây dựng máy tính">
+                                <i class="icon icon-buildpc"></i>
+
+                                <p class="icon-text m-0 text-12">
+                                    Xây dựng <br />Cấu hình PC
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="item clearfix">
+                            <a href="#" title="Tài khoản"><i class="icon icon-user"></i></a>
+
+                            <div class="icon-text m-0 text-12">
+                                <a href="#" class="d-block"> Đăng ký </a>
+                                <a href="#" class="d-block"> Đăng nhập </a>
+                            </div>
+                        </div>
+
+                        <div class="item clearfix">
+                            <a href="cart.html" class="d-block position-relative" title="Giỏ hàng của bạn">
+                                <i class="icon icon-cart mr-0"></i>
+                                <span class="js-cart-count cart-count"> 0</span>
+                            </a>
+                        </div>
+                        <div class="item clearfix">
+
+                            <a href="#" data-toggle="modal" data-target="#modal-fullscreen"
+                                class="d-block position-relative icon-menu">
+                                <i class="ti-menu mr-0"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- mennu -->
+                    <div class="header-menu d-flex align-items-center">
+                        <div class="header-menu-container">
+                            <a class="d-block  text-white menu-title" style="font-size: 15px">
+                                <i class="fa fa-bars list-product"></i> DANH MỤC SẢN PHẨM
+                            </a>
+
+                            <div class="header-menu-holder">
+                                <div class="item" data-id="395">
+                                    <a href="category.html" class="pro-cate-1">
+                                        <span class="cat-thumb-item" style="width: 35px; text-align: center">
+                                            <img src="https://anphat.com.vn/media/category/cat_b706c0f50035bddb63ca6e91efef7703.png"
+                                                alt="Máy tính xách tay - Laptop" />
+                                        </span>
+
+                                        <span class="title" title="Máy tính xách tay - Laptop">
+                                            Máy tính xách tay - Laptop
+                                        </span>
+                                    </a>
+                                    <div class="sub-menu">
+                                        <div class="cat-child-holder">
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Acer">Acer
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Acer Gaming/Đồ Họa">
+                                                            Acer Gaming/Đồ Họa
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Laptop Acer Aspire 7">
+                                                                Laptop Acer Aspire 7
+                                                            </a>
+
+                                                            <a href="#" title="Laptop Acer Nitro 5">
+                                                                Laptop Acer Nitro 5
+                                                            </a>
+
+                                                            <a href="#" title="Laptop Acer Nitro 7">
+                                                                Laptop Acer Nitro 7
+                                                            </a>
+
+                                                            <a href="#" title="Laptop Acer Helios 300">
+                                                                Laptop Acer Helios 300
+                                                            </a>
+
+                                                            <a href="#" title="Laptop Acer Triton 500">
+                                                                Laptop Acer Triton 500
+                                                            </a>
+
+                                                            <a href="#" title="Laptop Acer Helios 700">
+                                                                Laptop Acer Helios 700
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Acer Doanh Nhân, Mỏng nhẹ">
+                                                            Acer Doanh Nhân, Mỏng nhẹ
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Laptop Acer Swift 1">
+                                                                Laptop Acer Swift 1
+                                                            </a>
+
+                                                            <a href="#" title="Laptop Acer Swift 3">
+                                                                Laptop Acer Swift 3
+                                                            </a>
+
+                                                            <a href="#" title="laptop Acer Swift 5">
+                                                                laptop Acer Swift 5
+                                                            </a>
+
+                                                            <a href="#" title="Laptop Acer Swift 7">
+                                                                Laptop Acer Swift 7
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Acer Văn phòng">
+                                                            Acer Văn phòng
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Acer Predator Gaming">
+                                                            Acer Predator Gaming
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Acer Nitro 5 Gaming">
+                                                            Acer Nitro 5 Gaming
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Laptop Acer Nitro 5 Eagle">
+                                                                Laptop Acer Nitro 5 Eagle
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Acer Swift">
+                                                            Laptop Acer Swift
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Acer Aspire">
+                                                            Laptop Acer Aspire
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Laptop Acer Aspire 3">
+                                                                Laptop Acer Aspire 3
+                                                            </a>
+
+                                                            <a href="#" title="Laptop Acer Aspire 5">
+                                                                Laptop Acer Aspire 5
+                                                            </a>
+
+                                                            <a href="#" title="Laptop Acer Aspire 3 A315">
+                                                                Laptop Acer Aspire 3 A315
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Acer Aspire 5 A515">
+                                                            Laptop Acer Aspire 5 A515
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Asus">Asus
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Asus ROG Gaming series">
+                                                            Asus ROG Gaming series
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Asus TUF Gaming Series">
+                                                            Asus TUF Gaming Series
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Asus Zephyrus Gaming">
+                                                            Asus Zephyrus Gaming
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Asus Zenbook">
+                                                            Laptop Asus Zenbook
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Zenbook 13 UX333">
+                                                                Zenbook 13 UX333
+                                                            </a>
+
+                                                            <a href="#" title="Zenbook 14 UX433">
+                                                                Zenbook 14 UX433
+                                                            </a>
+
+                                                            <a href="#" title="Zenbook 15 UX533">
+                                                                Zenbook 15 UX533
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Asus Vivobook">
+                                                            Laptop Asus Vivobook
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Vivobook S530">
+                                                                Vivobook S530
+                                                            </a>
+
+                                                            <a href="#" title="Vivobook S433">
+                                                                Vivobook S433
+                                                            </a>
+
+                                                            <a href="#" title="Vivobook S430">
+                                                                Vivobook S430
+                                                            </a>
+
+                                                            <a href="#" title="Vivobook S330">
+                                                                Vivobook S330
+                                                            </a>
+
+                                                            <a href="#" title="Vivobook A515">
+                                                                Vivobook A515
+                                                            </a>
+
+                                                            <a href="#" title="Vivobook A512">
+                                                                Vivobook A512
+                                                            </a>
+
+                                                            <a href="#" title="Vivobook A415">
+                                                                Vivobook A415
+                                                            </a>
+
+                                                            <a href="#" title="Vivobook A412">
+                                                                Vivobook A412
+                                                            </a>
+
+                                                            <a href="#" title="Vivobook X415">
+                                                                Vivobook X415
+                                                            </a>
+
+                                                            <a href="#" title="Vivobook X515">
+                                                                Vivobook X515
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Asus Gaming">
+                                                            Laptop Asus Gaming
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Asus ExpertBook">
+                                                            Laptop Asus ExpertBook
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Asus ProArt">
+                                                            Laptop Asus ProArt
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="MSI">MSI
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="MSI Gaming GF Series">
+                                                            MSI Gaming GF Series
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="MSI GF66 Katana">
+                                                                MSI GF66 Katana
+                                                            </a>
+
+                                                            <a href="#" title="MSI GF76 Katana">
+                                                                MSI GF76 Katana
+                                                            </a>
+
+                                                            <a href="#" title="MSI GF75 Thin">
+                                                                MSI GF75 Thin
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="MSI GE Series">
+                                                            MSI GE Series
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="MSI GE66 Raider">
+                                                                MSI GE66 Raider
+                                                            </a>
+
+                                                            <a href="#" title="MSI GE75 Raider">
+                                                                MSI GE75 Raider
+                                                            </a>
+
+                                                            <a href="#" title="MSI GE76 Raider">
+                                                                MSI GE76 Raider
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="MSI GL Series">
+                                                            MSI GL Series
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="MSI GL76 Pulse">
+                                                                MSI GL76 Pulse
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="MSI GS Series">
+                                                            MSI GS Series
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="MSI GP Series">
+                                                            MSI GP Series
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="MSI Modern 14 Series">
+                                                            MSI Modern 14 Series
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="MSI Prestige Series">
+                                                            MSI Prestige Series
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="MSI Stealth 15 Series">
+                                                            MSI Stealth 15 Series
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="MSI Bravo Series">
+                                                            MSI Bravo Series
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="MSI Alpha Series">
+                                                            MSI Alpha Series
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#=" MSI Workstation">
+                                                            MSI Workstation
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Dell">Dell
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Dell Gaming">
+                                                            Laptop Dell Gaming
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Laptop Dell Gaming G3 3500">
+                                                                Laptop Dell Gaming G3 3500
+                                                            </a>
+
+                                                            <a href="#" title="Laptop Dell Gaming G5">
+                                                                Laptop Dell Gaming G5
+                                                            </a>
+
+                                                            <a href="#" title="Laptop Dell Gaming G7">
+                                                                Laptop Dell Gaming G7
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Dell XPS">
+                                                            Laptop Dell XPS
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Dell Vostro">
+                                                            Laptop Dell Vostro
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Dell Latitude">
+                                                            Laptop Dell Latitude
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Dell Inspiron">
+                                                            Laptop Dell Inspiron
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Dell Precision Workstation">
+                                                            Dell Precision Workstation
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Fujitsu">Fujitsu
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Fujitsu U Series">
+                                                            Laptop Fujitsu U Series
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Fujitsu U7 Nhôm">
+                                                                Fujitsu U7 Nhôm
+                                                            </a>
+
+                                                            <a href="#" title="Fujitsu U9 Carbon">
+                                                                Fujitsu U9 Carbon
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Fujitsu E Series">
+                                                            Laptop Fujitsu E Series
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Gigabyte">Gigabyte
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#AERO">
+                                                            AERO
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#AORUS">
+                                                            AORUS
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="G series">
+                                                            G series
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#=" Gigabyte G5">
+                                                                Gigabyte G5
+                                                            </a>
+
+                                                            <a href="#=" Gigabyte G7">
+                                                                Gigabyte G7
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="HP">HP
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop HP OMEN">
+                                                            Laptop HP OMEN
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop HP VICTUS">
+                                                            Laptop HP VICTUS
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop HP Pavilion">
+                                                            Laptop HP Pavilion
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop HP Probook">
+                                                            Laptop HP Probook
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop HP Spectre">
+                                                            Laptop HP Spectre
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop HP Elitebook">
+                                                            Laptop HP Elitebook
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop HP Envy">
+                                                            Laptop HP Envy
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Laptop HP Envy 13">
+                                                                Laptop HP Envy 13
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop HP Gaming">
+                                                            Laptop HP Gaming
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Lenovo">Lenovo
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Lenovo ThinkPad">
+                                                            Laptop Lenovo ThinkPad
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Lenovo IdeaPad">
+                                                            Laptop Lenovo IdeaPad
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Lenovo Yoga">
+                                                            Laptop Lenovo Yoga
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Lenovo Legion">
+                                                            Laptop Lenovo Legion
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Lenovo ThinkBook">
+                                                            Laptop Lenovo ThinkBook
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Lenovo ideapad gaming 3">
+                                                            Lenovo ideapad gaming 3
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Laptop Lenovo Gaming">
+                                                            Laptop Lenovo Gaming
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item" data-id="394">
+                                    <a href="category.html" class="pro-cate-1">
+                                        <span class="cat-thumb-item" style="width: 35px; text-align: center">
+                                            <img src="https://anphat.com.vn/media/category/cat_a2e098b9730b13b0f4a5fa64ee45901c.png"
+                                                alt="Máy tính - Máy chủ" />
+                                        </span>
+
+                                        <span class="title" title="Máy tính - Máy chủ">
+                                            Máy tính - Máy chủ
+                                        </span>
+                                    </a>
+
+                                    <div class="sub-menu">
+                                        <div class="cat-child-holder">
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Máy tính văn phòng">Máy tính
+                                                    văn phòng
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Mini PC (Siêu bé)">
+                                                            Mini PC (Siêu bé)
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Small Form (Cỡ nhỏ)">
+                                                            Small Form (Cỡ nhỏ)
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Micro Tower (Cỡ vừa)">
+                                                            Micro Tower (Cỡ vừa)
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#-lap-rap_dm1721.html" title="PC lắp ráp">
+                                                            PC lắp ráp
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#-gia-re_dm1722.html" title="Giá Rẻ (<9 triệu)">
+                                                            Giá Rẻ (<9 triệu) </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#-tam-trung_dm1723.html"
+                                                            title="Tầm trung (9 - 15 triệu)">
+                                                            Tầm trung (9 - 15 triệu)
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#-cao-cap_dm1724.html" title="Cao Cấp (>15 triệu)">
+                                                            Cao Cấp (>15 triệu)
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Máy tính đồng bộ">Máy tính đồng bộ
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#.html" title="Dell">
+                                                            Dell
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="HP">
+                                                            HP
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Intel NUC">
+                                                            Intel NUC
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="FPT ELead">
+                                                            FPT ELead
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Acer">
+                                                            Acer
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="IBM-LENOVO">
+                                                            IBM-LENOVO
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="ASUS">
+                                                            ASUS
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Gigabyte">
+                                                            Gigabyte
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="ConcepD Workstation">
+                                                            ConcepD Workstation
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Máy tính All-in-one">Máy tính
+                                                    All-in-one
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="All In One Dell">
+                                                            All In One Dell
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="All In One HP">
+                                                            All In One HP
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="All in One Lenovo">
+                                                            All in One Lenovo
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="All In One Asus">
+                                                            All In One Asus
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Máy chủ - Linh kiện">Máy chủ - Linh
+                                                    kiện
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy chủ - Server">
+                                                            Máy chủ - Server
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Máy chủ Lenovo - IBM">
+                                                                Máy chủ Lenovo - IBM
+                                                            </a>
+
+                                                            <a href="#" title="Máy chủ HP">
+                                                                Máy chủ HP
+                                                            </a>
+
+                                                            <a href="#" title="Máy chủ DELL">
+                                                                Máy chủ DELL
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Linh kiện máy chủ">
+                                                            Linh kiện máy chủ
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="CPU for Server">
+                                                                CPU for Server
+                                                            </a>
+
+                                                            <a href="#" title="Ram for Sever">
+                                                                Ram for Sever
+                                                            </a>
+
+                                                            <a href="#" title="HDD for Sever">
+                                                                HDD for Sever
+                                                            </a>
+
+                                                            <a href="#" title="VGA for Sever">
+                                                                VGA for Sever
+                                                            </a>
+
+                                                            <a href="#" title="RAID for Sever">
+                                                                RAID for Sever
+                                                            </a>
+
+                                                            <a href="#" title="Mainboard Server">
+                                                                Mainboard Server
+                                                            </a>
+
+                                                            <a href="#" title="Nguồn cho Server">
+                                                                Nguồn cho Server
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Máy trạm Workstation">Máy trạm
+                                                    Workstation
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="HP Workstation">
+                                                            HP Workstation
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Dell Workstation">
+                                                            Dell Workstation
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="GameNet">GameNet
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Thiết Bị Mạng Game Net">
+                                                            Thiết Bị Mạng Game Net
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Switch, Modem Game">
+                                                                Switch, Modem Game
+                                                            </a>
+
+                                                            <a href="#" title="Phụ Kiện Mạng">
+                                                                Phụ Kiện Mạng
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Bàn Ghế Game Net">
+                                                            Bàn Ghế Game Net
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Ghế Game Net">
+                                                                Ghế Game Net
+                                                            </a>
+
+                                                            <a href="#" title="Bàn Game Net">
+                                                                Bàn Game Net
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy chủ Game Net">
+                                                            Máy chủ Game Net
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Máy Chủ Lắp Ráp">
+                                                                Máy Chủ Lắp Ráp
+                                                            </a>
+
+                                                            <a href="#" title="Máy Chủ Đồng Bộ">
+                                                                Máy Chủ Đồng Bộ
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Cấu Hình Phòng Net">
+                                                            Cấu Hình Phòng Net
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Cấu Hình Intel">
+                                                                Cấu Hình Intel
+                                                            </a>
+
+                                                            <a href="#" title="Cấu Hình AMD">
+                                                                Cấu Hình AMD
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Phụ Kiện Game Net">
+                                                            Phụ Kiện Game Net
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Bàn Phím Game Net">
+                                                                Bàn Phím Game Net
+                                                            </a>
+
+                                                            <a href="# title=" Chuột Game Net">
+                                                                Chuột Game Net
+                                                            </a>
+
+                                                            <a href="#" title="Tai Nghe Game Net">
+                                                                Tai Nghe Game Net
+                                                            </a>
+
+                                                            <a href="#" title="Bàn di chuột Game Net">
+                                                                Bàn di chuột Game Net
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Màn hình Game Net">
+                                                            Màn hình Game Net
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Monitor AOC">
+                                                                Monitor AOC
+                                                            </a>
+
+                                                            <a href="#" title="Monitor Viewsonic">
+                                                                Monitor Viewsonic
+                                                            </a>
+
+                                                            <a href="#" title="Monitor Dell">
+                                                                Monitor Dell
+                                                            </a>
+
+                                                            <a href="#" title="Monitor Asus">
+                                                                Monitor Asus
+                                                            </a>
+
+                                                            <a href="#" title="Monitor Samsung">
+                                                                Monitor Samsung
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Gói Lắp Đặt Game Net">
+                                                            Gói Lắp Đặt Game Net
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Gói Game Net 20 Máy">
+                                                                Gói Game Net 20 Máy
+                                                            </a>
+
+                                                            <a href="#" title="Gói Game Net 40 Máy">
+                                                                Gói Game Net 40 Máy
+                                                            </a>
+
+                                                            <a href="#" title="Gói Game Net 60 Máy">
+                                                                Gói Game Net 60 Máy
+                                                            </a>
+
+                                                            <a href="#" title="Gói Game Net 80 Máy">
+                                                                Gói Game Net 80 Máy
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy Tính Tiền Game">
+                                                            Máy Tính Tiền Game
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="PCAP theo giá">PCAP theo giá
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="PCAP < 10 triệu">
+                                                            PCAP < 10 triệu </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="PCAP 10 - 20 triệu">
+                                                            PCAP 10 - 20 triệu
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="PCAP 20 - 30 triệu">
+                                                            PCAP 20 - 30 triệu
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="PCAP 30 - 40 triệu">
+                                                            PCAP 30 - 40 triệu
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="PCAP 40 - 60 triệu">
+                                                            PCAP 40 - 60 triệu
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="PCAP > 60 triệu">
+                                                            PCAP > 60 triệu
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="PCAP theo nhu cầu">PCAP theo nhu cầu
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="PC Gaming">
+                                                            PC Gaming
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="PCAP Văn phòng">
+                                                            PCAP Văn phòng
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="PCAP Livestream">
+                                                            PCAP Livestream
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="PCAP Đồ Họa/Workstation">
+                                                            PCAP Đồ Họa/Workstation
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="PCAP Gaming">
+                                                            PCAP Gaming
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="PCAP theo hãng">PCAP theo hãng
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="PCAP ASUS">
+                                                            PCAP ASUS
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="PCAP GIGABYTE">
+                                                            PCAP GIGABYTE
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="PCAP MSI">
+                                                            PCAP MSI
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="PCAP Hiệu Năng/Giá">
+                                                            PCAP Hiệu Năng/Giá
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Máy tính Mini">Máy tính Mini
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Apple Mac Mini">
+                                                            Apple Mac Mini
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2"
+                                                    title="Máy Workstation, Server Deep Learning - AI">Máy Workstation,
+                                                    Server Deep
+                                                    Learning - AI
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Deep Learning Workstation 2 GPUs">
+                                                            Deep Learning Workstation 2 GPUs
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Deep Learning Workstation 4 GPUs">
+                                                            Deep Learning Workstation 4 GPUs
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item" data-id="400">
+                                    <a href="category.html" class="pro-cate-1">
+                                        <span class="cat-thumb-item" style="width: 35px; text-align: center">
+                                            <img src="https://anphat.com.vn/media/category/cat_1073e9906b9dd89e0e453d1bc5ec4212.png"
+                                                alt="Máy in - TB văn phòng" />
+                                        </span>
+
+                                        <span class="title" title="Máy in - TB văn phòng">
+                                            Máy in - TB văn phòng
+                                        </span>
+                                    </a>
+                                    <div class="sub-menu no-big-img">
+                                        <div class="cat-child-holder">
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Máy in các hãng">Máy in
+                                                    các hãng
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy in Canon">
+                                                            Máy in Canon
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy in HP">
+                                                            Máy in HP
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy in Epson">
+                                                            Máy in Epson
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy in Brother">
+                                                            Máy in Brother
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy in Panasonic">
+                                                            Máy in Panasonic
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy in Fuji Xerox">
+                                                            Máy in Fuji Xerox
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy in Ricoh">
+                                                            Máy in Ricoh
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Máy in theo chức năng">Máy in theo
+                                                    chức năng
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy in đa năng">
+                                                            Máy in đa năng
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy in đơn năng">
+                                                            Máy in đơn năng
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy in màu">
+                                                            Máy in màu
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy in đen trắng">
+                                                            Máy in đen trắng
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy in 2 mặt">
+                                                            Máy in 2 mặt
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy in mã vạch">
+                                                            Máy in mã vạch
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy in hóa đơn">
+                                                            Máy in hóa đơn
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Máy in theo nhu cầu">Máy in theo nhu
+                                                    cầu
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy in văn phòng">
+                                                            Máy in văn phòng
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy in wifi">
+                                                            Máy in wifi
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Thiết bị văn phòng">Thiết bị văn phòng
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy chấm công">
+                                                            Máy chấm công
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Bộ lưu điện UPS">
+                                                            Bộ lưu điện UPS
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy hủy tài liệu">
+                                                            Máy hủy tài liệu
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy Photocopy">
+                                                            Máy Photocopy
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Phụ kiện máy photocopy">
+                                                                Phụ kiện máy photocopy
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy quét - Scaner">
+                                                            Máy quét - Scaner
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Điện thoại">
+                                                            Điện thoại
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy trợ giảng">
+                                                            Máy trợ giảng
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Thiết bị siêu thị, cửa hàng">Thiết bị
+                                                    siêu thị, cửa hàng
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Đầu đọc mã vạch">
+                                                            Đầu đọc mã vạch
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Thiết bị kiểm kho">
+                                                            Thiết bị kiểm kho
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy bán hàng POS">
+                                                            Máy bán hàng POS
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Vật tư & linh kiện thay thế">
+                                                            Vật tư & linh kiện thay thế
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy đếm tiền">
+                                                            Máy đếm tiền
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy tính tiền siêu thị, cửa hàng">
+                                                            Máy tính tiền siêu thị, cửa hàng
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Thiết bị trình chiếu">Thiết bị trình
+                                                    chiếu
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy chiếu">
+                                                            Máy chiếu
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Màn chiếu">
+                                                            Màn chiếu
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Giá để máy chiếu">
+                                                            Giá để máy chiếu
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Bút trình chiếu">
+                                                            Bút trình chiếu
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Máy chiếu vật thể">
+                                                            Máy chiếu vật thể
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Phần mềm">Phần
+                                                    mềm
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Antivirus">
+                                                            Antivirus
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="BKAV">
+                                                                BKAV
+                                                            </a>
+
+                                                            <a href="#" title="KASPERSKY">
+                                                                KASPERSKY
+                                                            </a>
+
+                                                            <a href="#" title="TREND MICRO">
+                                                                TREND MICRO
+                                                            </a>
+
+                                                            <a href="#" title="NORTON">
+                                                                NORTON
+                                                            </a>
+
+                                                            <a href="#" title="CMC">
+                                                                CMC
+                                                            </a>
+
+                                                            <a href="#" title="PM khác">
+                                                                PM khác
+                                                            </a>
+
+                                                            <a href="#" title="AVG">
+                                                                AVG
+                                                            </a>
+
+                                                            <a href="#" title="McAfee">
+                                                                McAfee
+                                                            </a>
+
+                                                            <a href="#" title="BULLGUARD">
+                                                                BULLGUARD
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="MS Office">
+                                                            MS Office
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="MS Windows">
+                                                            MS Windows
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Phần mềm ứng dụng">
+                                                            Phần mềm ứng dụng
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Máy ảnh">Máy ảnh
+                                                </a>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Mực in">Mực in
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Mực in chính hãng">
+                                                            Mực in chính hãng
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Mực in thương hiệu (giá rẻ)">
+                                                            Mực in thương hiệu (giá rẻ)
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Máy lọc không khí">Máy lọc không khí
+                                                </a>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Ổ cắm điện, Ổ điện">Ổ cắm điện, Ổ điện
+                                                </a>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Khóa cửa thông minh">Khóa cửa thông
+                                                    minh
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Khóa cửa vân tay">
+                                                            Khóa cửa vân tay
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Khóa cửa thông minh Filta">
+                                                            Khóa cửa thông minh Filta
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Khóa cửa thông minh Fuhlen">
+                                                            Khóa cửa thông minh Fuhlen
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Đèn học chống cận">Đèn học chống cận
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item" data-id="1253">
+                                    <a href="category.html" class="pro-cate-1">
+                                        <span class="cat-thumb-item" style="width: 35px; text-align: center">
+                                            <img src="https://anphat.com.vn/media/category/cat_cf48adbcc24dd52850830b617fdce703.png"
+                                                alt="Linh kiện máy tính" />
+                                        </span>
+
+                                        <span class="title" title="Linh kiện máy tính">
+                                            Linh kiện máy tính
+                                        </span>
+                                    </a>
+
+                                    <div class="sub-menu no-big-img">
+                                        <div class="cat-child-holder">
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="HDD - Ổ Cứng">HDD - Ổ Cứng
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="HDD theo hãng">
+                                                            HDD theo hãng
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Ổ cứng HDD Western Digital">
+                                                                Ổ cứng HDD Western Digital
+                                                            </a>
+
+                                                            <a href="#" title="Ổ cứng HDD Toshiba">
+                                                                Ổ cứng HDD Toshiba
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Dung lượng HDD">
+                                                            Dung lượng HDD
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="HDD 500GB">
+                                                                HDD 500GB
+                                                            </a>
+
+                                                            <a href="#" title="HDD 1TB">
+                                                                HDD 1TB
+                                                            </a>
+
+                                                            <a href="#" title="HDD 2T">
+                                                                HDD 2T
+                                                            </a>
+
+                                                            <a href="#" title="HDD 4TB">
+                                                                HDD 4TB
+                                                            </a>
+
+                                                            <a href="#" title="HDD 8TB">
+                                                                HDD 8TB
+                                                            </a>
+
+                                                            <a href="#" title="HDD 10TB - 12TB">
+                                                                HDD 10TB - 12TB
+                                                            </a>
+
+                                                            <a href="#" title="HDD 14 - 18TB">
+                                                                HDD 14 - 18TB
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Ổ cứng HDD SEAGATE">
+                                                            Ổ cứng HDD SEAGATE
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Case - Vỏ máy tính">Case - Vỏ máy tính
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Vỏ Case Theo Hãng">
+                                                            Vỏ Case Theo Hãng
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="ASUS">
+                                                                ASUS
+                                                            </a>
+
+                                                            <a href="#" title="GIGABYTE">
+                                                                GIGABYTE
+                                                            </a>
+
+                                                            <a href="#" title="MSI">
+                                                                MSI
+                                                            </a>
+
+                                                            <a href="#" title="INWIN">
+                                                                INWIN
+                                                            </a>
+
+                                                            <a href="#" title="PHANTEK">
+                                                                PHANTEK
+                                                            </a>
+
+                                                            <a href="#" title="CORSAIR">
+                                                                CORSAIR
+                                                            </a>
+
+                                                            <a href="#" title="NZXT">
+                                                                NZXT
+                                                            </a>
+
+                                                            <a href="#" title="LIAN-LI">
+                                                                LIAN-LI
+                                                            </a>
+
+                                                            <a href="#" title="COOLER MASTER">
+                                                                COOLER MASTER
+                                                            </a>
+
+                                                            <a href="#" title="THERMALTAKE">
+                                                                THERMALTAKE
+                                                            </a>
+
+                                                            <a href="#" title="XIGMATAKE">
+                                                                XIGMATAKE
+                                                            </a>
+
+                                                            <a href="#" title="GAMEMAX">
+                                                                GAMEMAX
+                                                            </a>
+
+                                                            <a href="#" title="KENOO">
+                                                                KENOO
+                                                            </a>
+
+                                                            <a href="#" title="E-DRA">
+                                                                E-DRA
+                                                            </a>
+
+                                                            <a href="#" title="XTECH">
+                                                                XTECH
+                                                            </a>
+
+                                                            <a href="#" title="SAMA">
+                                                                SAMA
+                                                            </a>
+
+                                                            <a href="#" title="MIK">
+                                                                MIK
+                                                            </a>
+
+                                                            <a href="#" title="HÃNG KHÁC">
+                                                                HÃNG KHÁC
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Kích Thước">
+                                                            Kích Thước
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="ATX Super Tower">
+                                                                ATX Super Tower
+                                                            </a>
+
+                                                            <a href="#" title="ATX Full Tower">
+                                                                ATX Full Tower
+                                                            </a>
+
+                                                            <a href="#" title="ATX Mid Tower">
+                                                                ATX Mid Tower
+                                                            </a>
+
+                                                            <a href="#" title="Micro ATX">
+                                                                Micro ATX
+                                                            </a>
+
+                                                            <a href="#" title="Mini ITX">
+                                                                Mini ITX
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Chất Liệu">
+                                                            Chất Liệu
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Thép">
+                                                                Thép
+                                                            </a>
+
+                                                            <a href="#" title="Nhôm">
+                                                                Nhôm
+                                                            </a>
+
+                                                            <a href="#" title="Kính Cường Lực">
+                                                                Kính Cường Lực
+                                                            </a>
+
+                                                            <a href="#" title="Nhựa">
+                                                                Nhựa
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Kích Thước Mainboard">
+                                                            Kích Thước Mainboard
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="E-ATX">
+                                                                E-ATX
+                                                            </a>
+
+                                                            <a href="#" title="ATX">
+                                                                ATX
+                                                            </a>
+
+                                                            <a href="#" title="Micro ATX">
+                                                                Micro ATX
+                                                            </a>
+
+                                                            <a href="#" title="Mini ITX">
+                                                                Mini ITX
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Số Quạt Đi Kèm">
+                                                            Số Quạt Đi Kèm
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="0 Fan">
+                                                                0 Fan
+                                                            </a>
+
+                                                            <a href="#" title="1 Fan">
+                                                                1 Fan
+                                                            </a>
+
+                                                            <a href="#" title="2 Fan">
+                                                                2 Fan
+                                                            </a>
+
+                                                            <a href="#" title="3 Fan">
+                                                                3 Fan
+                                                            </a>
+
+                                                            <a href="#" title="4 Fan">
+                                                                4 Fan
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Màu Sắc">
+                                                            Màu Sắc
+                                                        </a>
+
+                                                        <div class="cat-4-list">
+                                                            <a href="#" title="Đen">
+                                                                Đen
+                                                            </a>
+
+                                                            <a href="#" title="Trắng">
+                                                                Trắng
+                                                            </a>
+
+                                                            <a href="#" title="Đỏ">
+                                                                Đỏ
+                                                            </a>
+
+                                                            <a href="#" title="Hồng">
+                                                                Hồng
+                                                            </a>
+
+                                                            <a href="#" title="Xanh">
+                                                                Xanh
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Bàn Phím - Chuột">Bàn Phím - Chuột
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Chuột Máy Tính">
+                                                            Chuột Máy Tính
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Bàn phím Máy Tính">
+                                                            Bàn phím Máy Tính
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Bộ bàn phím - chuột">
+                                                            Bộ bàn phím - chuột
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cat-child-items">
+                                                <a href="#" class="cate-2" title="Ổ cứng HDD - SSD">Ổ cứng HDD - SSD
+                                                </a>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Ổ NAS (Ổ cứng lưu trữ mạng)">
+                                                            Ổ NAS (Ổ cứng lưu trữ mạng)
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="cat-child-last">
+                                                        <a href="#" title="Ổ cứng chuyên Camera">
+                                                            Ổ cứng chuyên Camera
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="
+                menu-text-right
+                d-flex
+                align-items-center
+                justify-content-between
+                
+                text-13
+              ">
+                            <a href="#" target="_blank" class="header-history">
+                                Sản phẩm bạn đã xem
+                            </a>
+                            <a href="#" class="bg-icon icon-flash">
+                                Flash sale
+                            </a>
+
+                            <a href="" class="bg-icon icon-medal"> Hàng chính hãng </a>
+                            <a href="#" class="bg-icon icon-package">
+                                Đổi trả miễn phí
+                            </a>
+                            <a href="#" class="bg-icon icon-delivery">
+                                Miễn phí vận chuyển
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <section class="product-detail-page">
+        <div class="container" style="padding: 0;">
+            <div id="breadcrumb">
+                <ol class="ul clearfix">
+                    <li>
+                        <a href="/" itemprop="item" class="nopad-l">
+                            <span itemprop="name"><span style="font-size: 0px">Home</span> <i
+                                    class="icon icon-home"></i></span>
+                        </a>
+                        <meta itemprop="position" content="1" />
+                    </li>
+
+                    <li>
+                        <a href="/may-tinh-xach-tay-laptop.html" itemprop="item" class="nopad-l">
+                            <span itemprop="name">Máy tính xách tay - Laptop</span>
+                        </a>
+                        <meta itemprop="position" content="2" />
+                    </li>
+                    <li>
+                        <a href="/laptop-intel-evo_dm2295.html" itemprop="item">
+                            <span itemprop="name">
+                                <h1> Laptop Intel Evo </h1>
+                            </span>
+                        </a>
+                        <meta itemprop="position" content="3" />
+                    </li>
+                </ol>
+            </div>
+            <section class="product-detail-container row">
+                <div class="product-slider col-lg-6 col-sm-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="./assets/img/photo.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./assets/img/photo.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./assets/img/photo.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="information">
+                        <ul>
+                            <li><span>Hãng sản xuất </span> <span>Laptop Acer</span></li>
+                            <li><span>Tên sản phẩm</span> <span>Acer Nitro 5 AMD AN515-45-R9SC NH.QBRSV.001</span></li>
+                            <li><span>Nhóm sản phẩm</span><span>Laptop | Acer Nitro 5 | Laptop gaming | Laptop RTX 30
+                                    series</span></li>
+                            <li><span>Bộ vi xử lý</span><span>AMD Ryzen™ 7-5800H</span></li>
+                            <li><span>Tốc độ</span><span>3.3GHz upto 4.4GHz, 8 cores 16 threads</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_detail col-lg-6 col-sm-12">
+                    <div class="product_detail-name">WiFi ốp trần Tenda AP i24 tốc độ 1167Mbps, tải thực tế 80-100 thiết
+                        bị, cổng PoE chuẩn Gigabit</div>
+                    <div class="product_detail-price">
+                        <div class="product_detail-price-now">1,790,000<u>đ</u></div>
+                        <div class="product_detail-price-prev">2,000,000<u>đ</u></div>
+                    </div>
+                    <div class="product_detail-feature">
+                        <ul>
+                            <li>Chịu tải WiFi 80-100 thiết bị.</li>
+                            <li>Sóng chuẩn AC 1167Mbps (2.4Ghz 300Mbps + 5.0Ghz 867Mbps)</li>
+                            <li> Anten với công suất 4 dBi</li>
+                            <li>Băng tần kép 2.4 / 5.0Ghz</li>
+                        </ul>
+                    </div>
+                    <div class="variant-item">
+                        <b class="d-block"> Tuỳ chọn sản phẩm </b>
+                    </div>
+
+                    <div class="product_detail-cart row">
+                        <div class="message-sold-out"><i class="ti-info-alt"></i><span>Sản phẩm hiện đang hết hàng
+                            </span></div>
+                        <div class="form-send-sold-out row">
+                            <div class="title">Nhập thông tin để nhận thông báo khi có hàng</div>
+                            <div class="info-sold-out row">
+                                <input class=" col-12" placeholder="Tên của bạn" />
+                                <input class=" col-12" placeholder="Số ĐT: Có sử dụng Zalo Hoặc Facebook" />
+                            </div>
+                            <button class="button-buynow col-12">GỬI THÔNG TIN
+
+                            </button>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </section>
+            <section class="product_description row">
+                <div class="title">Mô tả sản phẩm</div>
+                <div id="summary">
+                    <p class="collapse" id="collapseSummary">
+                        <span>
+
+                            WiFi ốp trần Tenda AP i24 là thiết bị phát sóng Accesspoint (điểm truy cập) có chức năng duy
+                            nhất là kết nối tín hiệu trung gian giữa Router & Thiết bị sử dụng như: SmartPhone, Laptop,
+                            Camera… Cần lưu ý bộ phát WiFi chuẩn Acesspoint (AP) không cấp phát IP internet nhưng chịu
+                            tải
+                            kết nối số lượng lớn thiết bị sử dụng, ngoài ra một hệ thống nhiều AP có khả năng đồng bộ
+                            thành
+                            1 sóng WiFi (SSID) là môi trường hoạt động cho các hệ thống không dây nội bộ như: Camera,
+                            Điện
+                            thoại, Máy pos, Thiết bị quản lý vận hành sản xuất… <br>
+                        </span>
+                        <span class="title-hot">TÍNH NĂNG WiFi ỐP TRẦN TENDA AP i24<br></span>
+                        <span>WiFi phát chuẩn 802.11 a/b/g/n/ac tổng băng thông 1167Mbps (2.4Ghz 300Mbps + 5.0Ghz
+                            867Mbps) có
+                            khả năng kết nối đồng thời 80-100 thiết bị truy cập, đáp ứng mọi nhu cầu down/upload nội
+                            dung
+                            Video 4K, chơi Game Online…</span>
+
+                        <br><img class="aligncenter"
+                            src="https://wifistore.vn/wp-content/uploads/2021/08/wifi-op-tran-tenda-i24-2.jpg" alt=""
+                            srcset=""><br>
+                        <span>
+                            Antenna gain công suất 4dBi giúp Tenda AP i24 phủ sóng trong bán kính 25 mét không vật cản
+                            và
+                            xuyên qua 1 lớp tường 10cm, phù hợp cho 1 không gian sử dụng tập trung
+                        </span>
+
+
+                    </p>
+                    <a class="collapsed" data-toggle="collapse" href="#collapseSummary" aria-expanded="false"
+                        aria-controls="collapseSummary"></a>
+                </div>
+
+            </section>
+
+            <!-- tư vấn -->
+            <section class="tuvan">
+                <div class="tuvan-title">Bạn cần tư vấn thêm? </div>
+                <div class="tuvan-infor">
+                    <input class="tuvan-infor-name" placeholder="Tên của bạn"></input>
+                    <input class="tuvan-infor-phone" placeholder="SĐT: Có sử dụng Zalo hoặc Facebook"></input>
+                </div>
+                <button>TƯ VẤN CHO TÔI</button>
+
+
+            </section>
+            <!-- tư vấn -->
+
+            <!-- comment -->
+            <section class="comment row">
+                <div class="title">ĐÁNH GIÁ VÀ NHẬN XÉT</div>
+                <div class="user_comment-header">
+                    <div class="icon-user">
+                        <img width="50px" height="50px"
+                            src="https://pbs.twimg.com/profile_images/746460305396371456/4QYRblQD.jpg" alt="" srcset="">
+                    </div>
+                    <textarea name="" id="" cols="130" rows="5" placeholder="Nội dung"></textarea>
+                    <button class="button-send">Gửi</button>
+                </div>
+                <div class="user_comment">
+                    <div class="icon-user">
+                        <img width="50px" height="50px"
+                            src="https://pbs.twimg.com/profile_images/746460305396371456/4QYRblQD.jpg" alt="" srcset="">
+                    </div>
+                    <div class="user_comment-form" data-id="1">
+                        <div class="user_comment-name">Hoang Anh</div>
+                        <div class="user_comment-text"><span>
+                                Mình có samsung tab s7 plus muốn đổi fold 3. Tình trạng máy mình
+                                như mới hộp sạc bàn phím hãng đầy đủ
+                            </span>
+                            <button class="reply" data-id="1" onclick="openReply(this.getAttribute('data-id'))">Trả
+                                lời</button>
+
+                        </div>
+                        <div class="user_reply">
+                            <div class="icon-user">
+                                <img width="50px" height="50px"
+                                    src="https://pbs.twimg.com/profile_images/746460305396371456/4QYRblQD.jpg" alt=""
+                                    srcset="">
+                            </div>
+                            <textarea name="" id="" cols="123" rows="5" placeholder="Để lại câu trả lời"></textarea>
+                            <button class="button-send">Gửi</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- comment -->
+
+
+            <!-- slider-product_same -->
+            <section class="slider_product_same">
+                <div class="slider_product_same-header">
+                    <span onclick='changeProductSame(1)' class='same-header-active'>TƯƠNG TỰ</span>
+                    <span onclick='changeProductSame(2)'>CÙNG HÃNG</span>
+                    <span onclick='changeProductSame(3)'>LIÊN QUAN</span>
+                </div>
+                <div class="slider slider_container">
+                    <div class="col_product_same">
+
+                        <div class="product_same_item">
+                            <img src="https://wifistore.vn/wp-content/uploads/2021/08/wifi-4g-alcatel-ee120-1-280x280.jpg"
+                                alt="" srcset="" />
+
+                        </div>
+                        <div class="name">Bộ phát WiFi 4G Huawei B312 có 1 cổng Lan/Wan, 1 chân anten gắn ngoài, kết nối
+                            32 thiết bị</div>
+                    </div>
+                    <div class="col_product_same">
+
+                        <div class="product_same_item">
+                            <img src="https://wifistore.vn/wp-content/uploads/2021/08/wifi-4g-alcatel-ee120-1-280x280.jpg"
+                                alt="" srcset="" />
+
+                        </div>
+                        <div class="name">Bộ phát WiFi 4G Huawei B312 có 1 cổng Lan/Wan, 1 chân anten gắn ngoài, kết nối
+                            32 thiết bị</div>
+
+                    </div>
+                    <div class="col_product_same">
+
+                        <div class="product_same_item">
+                            <img src="https://wifistore.vn/wp-content/uploads/2021/08/wifi-4g-alcatel-ee120-1-280x280.jpg"
+                                alt="" srcset="" />
+
+                        </div>
+                        <div class="name">Bộ phát WiFi 4G Huawei B312 có 1 cổng Lan/Wan, 1 chân anten gắn ngoài, kết nối
+                            32 thiết bị</div>
+                    </div>
+                    <div class="col_product_same">
+
+                        <div class="product_same_item">
+                            <img src="https://wifistore.vn/wp-content/uploads/2021/08/wifi-4g-alcatel-ee120-1-280x280.jpg"
+                                alt="" srcset="" />
+
+                        </div>
+                        <div class="name">Bộ phát WiFi 4G Huawei B312 có 1 cổng Lan/Wan, 1 chân anten gắn ngoài, kết nối
+                            32 thiết bị</div>
+                    </div>
+                    <div class="col_product_same">
+
+                        <div class="product_same_item">
+                            <img src="https://wifistore.vn/wp-content/uploads/2021/08/wifi-4g-alcatel-ee120-1-280x280.jpg"
+                                alt="" srcset="" />
+
+                        </div>
+                        <div class="name">Bộ phát WiFi 4G Huawei B312 có 1 cổng Lan/Wan, 1 chân anten gắn ngoài, kết nối
+                            32 thiết bị</div>
+                    </div>
+                    <div class="col_product_same">
+
+                        <div class="product_same_item">
+                            <img src="https://wifistore.vn/wp-content/uploads/2021/08/wifi-4g-alcatel-ee120-1-280x280.jpg"
+                                alt="" srcset="" />
+
+                        </div>
+                        <div class="name">Bộ phát WiFi 4G Huawei B312 có 1 cổng Lan/Wan, 1 chân anten gắn ngoài, kết nối
+                            32 thiết bị</div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- slider-product_same -->
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-white">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer_display">
+                    <div class="item">
+                        <p class="title">KẾT NỐI VỚI CHÚNG TÔI</p>
+
+                        <div class="social-media" style="margin-top: 26px">
+                            <a href="#" target="_blank" class="icon icon-fb"></a>
+                            <a href="" target="_blank" class="icon icon-gg"></a>
+                            <a href="#" target="_blank" class="icon icon-youtube"></a>
+                            <a href="#" target="_blank" class="icon icon-zalo"></a>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <p class="title">CHẤP NHẬN THANH TOÁN</p>
+
+                        <div class="icon icon-payment" style="margin-top: 6px"></div>
+                    </div>
+
+                    <div class="item">
+                        <p class="title">
+                            MỜI BẠN NHẬP EMAIL NHẬN THÔNG TIN
+                        </p>
+
+                        <div class="newsletter-form">
+                            <form>
+                                <input type="text" name="" id="js-email_newsletter" placeholder="Nhập email của bạn" />
+                                <button type="button" onclick="subscribe_newsletter('#js-email_newsletter')"
+                                    class="submit-newsletter">
+                                    GỬI
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-img">
+            <div class="container">
+                <div class="clearfix" style="padding: 0 10px">
+                    <i class="icon icon-truck"></i>
+                    <i class="icon icon-trade"></i>
+                    <i class="icon icon-card"></i>
+                    <i class="icon icon-supp"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 col-md-6 col-6 col-lg-3 col-sm-6">
+                        <div class="item">
+                            <p class="glo-title">THÔNG TIN CHUNG</p>
+
+                            <div>
+                                <a href="#">
+                                    Giới thiệu về An Phát
+                                </a>
+                                <a href="tin-tuc.html"> Tin tức </a>
+                                <a href="#">
+                                    Liên hệ - góp ý
+                                </a>
+                                <a href="#">
+                                    Khách hàng doanh nghiệp
+                                </a>
+                                <a href="#"> Xây dựng cấu hình PC V1 </a>
+
+                                <a href="#">
+                                    <img src="https://www.anphatpc.com.vn/template/anphat_2020v2/images/bct.png"
+                                        alt="Bộ công thương" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 col-md-6 col-6 col-lg-3 col-sm-6">
+                        <div class="item">
+                            <p class="glo-title">HỖ TRỢ KHÁCH HÀNG</p>
+
+                            <div>
+                                <a href="#">
+                                    Hướng dẫn mua hàng trực tuyến
+                                </a>
+                                <a href="#">
+                                    Hướng dẫn thanh toán
+                                </a>
+                                <a href="#">
+                                    Hướng dẫn mua hàng trả góp
+                                </a>
+                                <a href=""> In hoá đơn điện tử </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 col-md-6 col-6 col-lg-3 col-sm-6">
+                        <div class="item">
+                            <p class="glo-title">CHÍNH SÁCH CHUNG</p>
+
+                            <div>
+                                <a href="#">
+                                    Chính sách vận chuyển
+                                </a>
+                                <a href="#">
+                                    Chính sách bảo hành
+                                </a>
+                                <a href="#">
+                                    Chính sách đổi trả và hoàn tiền
+                                </a>
+                                <a href="#">
+                                    Chính sách cho doanh nghiệp
+                                </a>
+                                <a href=""> Chính sách hàng chính hãng </a>
+                                <a href="#">
+                                    Bảo mật thông tin khách hàng
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 col-md-6 col-6 col-lg-3 col-sm-6">
+                        <div class="item">
+                            <p class="glo-title">TỔNG ĐÀI HỖ TRỢ</p>
+
+                            <ul class="ul footer-contact">
+                                <li><b>KD online:</b> 1900.0323 phím 1</li>
+
+                                <li><b>KD 49 Thái Hà - HN:</b> 1900.0323 phím 6</li>
+
+                                <li><b>Chăm sóc khách hàng:</b> 1900.0323 phím 0</li>
+
+                                <li><b>Góp ý - khiếu nại:</b> 0904.316.386</li>
+
+                                <li class="email"><b>Email:</b> dung@anphatpc.com.vn</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-address">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12  mb-50">
+                        <div class="item">
+                            <p class="title">Showroom Lê Thanh Nghị - HN</p>
+
+                            <ul class="ul">
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>
+                                        Địa chỉ: 151 Lê Thanh Nghị - Hai Bà Trưng - Hà Nội
+                                        <a href="https://goo.gl/maps/Yxz9Pvz1pgB9xYQs8" target="blank" class="d-block">[
+                                            Xem đường đi ]</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <span> Điện thoại: 1900.0323 phím 4 </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <span> Hotline: 0977.270.710 hoặc 0937.182.886 </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope"></i>
+                                    <span> Email: co@anphatpc.com.vn </span>
+                                </li>
+                                <li>
+                                    <i class="fa"></i>
+                                    <span> Giờ mở cửa: 8H30 - 19H30 (Chủ nhật & ngày lễ) </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12  mb-50">
+                        <div class="item">
+                            <p class="title">Showroom Lý Thường Kiệt - TPHCM</p>
+
+                            <ul class="ul">
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>
+                                        Địa chỉ: 158 - 160 Lý Thường Kiệt P.14 - Q.10 - TPHCM
+                                        <a href="https://goo.gl/maps/MX79gaPrydnFiFCW6" target="blank" class="d-block">[
+                                            Xem đường đi ]</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <span>
+                                        Điện thoại: 1900.0323 phím 2 hoặc 028.3838.6569
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <span> Hotline: 0917.948.081 </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope"></i>
+                                    <span> Email: loan@anphatpc.com.vn </span>
+                                </li>
+                                <li>
+                                    <i class="fa"></i>
+                                    <span> Giờ mở cửa: 8H30 - 19H (Chủ nhật & ngày lễ) </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12  mb-50">
+                        <div class="item">
+                            <p class="title">Showroom Thái Hà- HN</p>
+
+                            <ul class="ul">
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>
+                                        49 Thái Hà - Đống Đa - Hà Nội
+                                        <a href="https://goo.gl/maps/fQkzMmh1gkNbNVEC9" target="blank" class="d-block">[
+                                            Xem đường đi ]</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <span> Điện thoại: 1900.0323 phím 6 </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <span> Hotline: 0918.557.006 </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope"></i>
+                                    <span> Email: Hoangphuong@anphatpc.com.vn </span>
+                                </li>
+                                <li>
+                                    <i class="fa"></i>
+                                    <span> Giờ mở cửa: 8H30 - 21H (Chủ nhật & ngày lễ) </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div style="background: #edeef2; padding: 10px 0">
+            <div class="container text-12 ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vel
+                explicabo velit unde autem sed dignissimos fugiat? Sint nihil soluta
+                reiciendis officiis ducimus? Esse reprehenderit enim magni ducimus
+                assumenda quae.<br />
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Necessitatibus laborum vitae ad dolor impedit iste
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+    <!-- modal menu  -->
+    <div class="modal fade modal-fullscreen" id="modal-fullscreen" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <img height="60px" width="60px" style="margin-right: 20px;"
+                        src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png" />
+                    <h3 class="modal-title" id="myModalLabel">Đăng nhập/Đăng ký</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li><i class="ti-home icon"></i>
+                            <a href="index.html" style="color: #7c7c7c;">Trang chủ</a>
+                        </li>
+                        <li><i onclick="showMoreModal()" class="icon-more ti-menu-alt icon"></i> Danh mục sản phẩm </li>
+                        <ul>
+                            <li>
+                                <a href="category.html" style="color: #7c7c7c;"><span class="cat-thumb-item"
+                                        style="width: 35px; text-align: center">
+                                        <img width="35px" style="margin-right: 6px;"
+                                            src="https://anphat.com.vn/media/category/cat_b706c0f50035bddb63ca6e91efef7703.png"
+                                            alt="Máy tính xách tay - Laptop" />
+                                    </span> mays tinh</a>
+                            </li>
+                            <li>
+                                <a href="category.html" style="color: #7c7c7c;">
+                                    <span class="cat-thumb-item" style="width: 35px; text-align: center">
+                                        <img width="35px" style="margin-right: 6px;"
+                                            src="https://anphat.com.vn/media/category/cat_a2e098b9730b13b0f4a5fa64ee45901c.png"
+                                            alt="Máy tính xách tay - Laptop" />
+                                    </span> may chu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="category.html" style="color: #7c7c7c;">
+                                    <span class="cat-thumb-item" style="width: 35px; text-align: center">
+                                        <img width="35px" style="margin-right: 6px;"
+                                            src="https://anphat.com.vn/media/category/cat_1073e9906b9dd89e0e453d1bc5ec4212.png"
+                                            alt="Máy tính xách tay - Laptop" />
+                                    </span> linh kien may tinh
+                                </a>
+                            </li>
+                            <li>
+                                <a href="category.html" style="color: #7c7c7c;">
+                                    <span class="cat-thumb-item" style="width: 35px; text-align: center">
+                                        <img width="35px" style="margin-right: 6px;"
+                                            src="https://anphat.com.vn/media/category/cat_cf48adbcc24dd52850830b617fdce703.png"
+                                            alt="Máy tính xách tay - Laptop" />
+                                    </span> may in van phong
+                                </a>
+                            </li>
+                        </ul>
+                        <li><a href="cart.html" style="color: #7c7c7c;"><i class="ti-shopping-cart icon"></i> Giỏ
+                                hàng</a></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <ul>
+                        <li>
+                            <i class="ti-mobile icon"></i><span
+                                style="font-size: 38px;font-weight: bold;color: chocolate;"> 1900 1903
+                            </span>(1000đ/phút)
+
+
+                        </li>
+                        <li><i class="ti-headphone icon"></i> Tư vấn mua hàng</li>
+
+                        <li> <i class="ti-star icon"></i> Tra cứu bảo hành</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal menu  -->
+
+    <div class="menu_cart">
+        <button class="menu_cart-buynow"><a style="color: white;" href="cart.html">MUA NGAY</a></button>
+        <button class="menu_cart-tragop">
+            <span style="min-width: 300px !important;">MUA TRÊN SÀN</span>
+            <div class="shopee-lazada">
+                <ul>
+                    <li>
+                        <img class="lazada" style="transform: scale(1.5);"
+                            src="https://photo-cms-sggp.zadn.vn/w580/Uploaded/2021/yfsgf/2019_06_20/lazadamasterlogo_esvv.png" />
+                    </li>
+                    <li>
+                        <img class="shopee"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAY0AAAB/CAMAAAAkVG5FAAAAkFBMVEX////uTS3uSyruRiL+9PLtOQXzkYLtQhrtOwvtOADtQRfygnHuSCXuSin/+/rtRB/vVTf84+DxcFv4vbX2raP86OX61dD5zMbwZ1D2qJ3ziXn1opb3taz0lojvWT3xdGD97+34wbnvX0X729fyfWvwZk7uUjP60cv5x8D0lYfxcl31npLxd2TyhXXwZk/yfm0PXMB1AAARp0lEQVR4nO1daXvqKhBuNgNIjPsabVxqF/X2//+7awIkJGGLHpeq74fzPKehKeGFmWFmGN7e6mHYb3QXlrXoTvvDmr/6wr/FqAlAiAPriACHCGxGt+7R86JnAWwVgIEd3bpXz4lhG9lWBTbaft66Z0+IBgyqXKR8wOmt+/ZscBe+mIsEYTu+df+eCh0/Uxi2g0AK5GSCC6POrXv4ROh4bOADhOejQevtrTUYze1Mqdve+tZ9fBoMACXDBh8Fk/ZznD8Z3Kp3T4ZWQPU3Dr/Kz0bYoYvGad2ib8+HLh1w1BUMeGuPKFXj6/fsCdGnww0a4udzQMmaXLdfT4kY0sGey1rsKB3wpToujndiN4VNeZNpSGRV93q9elIMPaKkF6pGK8IYePlILoz/sIEUiillq2v16kmxJuPsz9TNJsRvAl4Rj4uiiYk3RNcOp7tAvLlGn54WLWJQ+dogRkTMYOheo1fPih4ZZKBviQxpe+F07FNB5Uj2fTzm6YYd/1y+T88LYKyc16QpvHyfnhZ0iJFJW2JVoZdVdTFEvrmldEiFmt+/dJ+eF41UGYRGI0yYc14x8othnM53ZJQ0NUytquDj0n16XgTpns4srDcgOka7T3zhVJC9n2cU1aMbRYOtyQtKuBLE1KSSPS+gRa3hgazBrb/yb6CDoCcGjSJZQPK8VmP4cima4L9Sbu2lEFi3/tK/gOtwYb1UihEWVyLDxrf+0r+AD0Hm+UXYaN/6S/8CfiS55/8arzitCTbX0uKv9DcDHK7ExitMa4LGtdg43PpL/wLmznXYMIkgvjC7Ehvh7tZf+hcwCa/EhiYn64UE0ZXYeIUFTdBTnK8UwsYJau8Z/d6tv/QvYFmHjcAH3uKnefjtLgBAYZ2NI1qa9GbQ+35fba3t6r3RH8XCJotkIuD3fzkG94MRMh5QB477+enXwWi2gr4xIahyTK2CeGZ5voMD27YD7PgIbr+rae8utBM8qA/y05QNDBuVmGwcfUBDm0yb3BM3YViSf7YD/Hnp9LNLE7X/4RDcEYaGbICfWPj7nQM02j8CzSHmmYRWB+4LfDw2Gx0gHIQyoDzFdvALDXQ6UJ7wb43lkwLDTZy3fGw2BkZsQKWcGbb1dIBY8QLX4hbGUWeUbDYMc4PssdmITdjIyYijwwJA0H6f9zgt4upf4inyFFpWVpUhBGH3MG12twDk5TQsO88+fWw26NcpgdjObbCBvpOYUTYOfc/KNKyBmaxKBGJH0m207TOOW+voPTPZUL51fGw2aCKUCtlp11lRYduht0rt1paBJaAwSSO6snBY2pO0ojZI+OBLAzw2G296IQPpEthUBz0Aq6OtdDCwcuVsMC7DsWD5jBbHpzDOf/DgbGiFDDsj0xCugAA2IgPVYwfSDvRJD2TnzSMAeafKg7Nh6+whuoseykSaY+JbseUnzrdpB2xp3Ri3YM89OBta65SereyeFSSUh8U7ZHiRoVfxwdlYaVxNNPXG1Wt7FeRuPupENh3eB2dDN+fpOBr7syRvkRYq2aUBFuOw+YOzoUvhoeO0PI8NeVh8Sk5QmRZUenA2mjo2yKyu4XkXsiGtqET+/osNgoZms0D1b3ye3pCHxcnfN04peXA2tCk81Eek0/YaNqRhcZImYZseKHhwNma6NAXqC/88a3HIi15QEWh22PPh2dCm8DAhMz1Hc8iTFKijzHRxPDgbkXYrzb58fwYdirA4qWZiOWaV+B6cDX0KT6aBd7LS9gZsyMvsMZeL0GtYwYOz8aWf8cyJ+7ZeiK59MIHqECatZGlhx0B3nMXGYDgaDTtSh9jgiMLTeDCIjV/eOb58bdo87YngJL7BRsK2sy4u2+UrUQzZUITF3bwAeFdbkL3IRidqdNt2ezzta39xPfuAAB0B4EKQGXQETKr1Q+rejHuHLfQA8OBiutSer+7sVunLgQc2PV3rQb/LetLtlxgxSRrBi3zGfG6gX58QZUWG3FzD3liTBcex4U62Sf5Vkn7l+ADvYsWv9RYgT8azHYAn1RWSDgRxy33+HD+SzREHwV8l2V8rL3859uFU1ZP1Ozd+x8bvhVevTQLj2OL+QKv3UyOtjcBTdfDtK7eeAwSmKoGVs7Er5l/ZIWzIZNDIQqX+2j6o2NwZG+tV5U4k2JVOp84KlF7uQKnnwd2UE54w3HCLySyFJwCFOetGK6/WUQOo1tAj3j5wEPiVmmCUjWAdVK2PUGK5NYUpRuijJFIYG3ORsYKhZP/aF7X222LyRkgwag5n4hgljRwB9nHhxZ2pVyO93ZONLsWgePsNPq4Qsd5nWRVCc8IWTcp4K+knLmXcEZG96EqMTLAX9WcqHr5AmPPUF2ee2TnTJkkjpPNwWlTF7gwZ86G3gcrJhg5oi/bvmu6iiud+wF+sE/o+SXqho1DQ5lSB5lPdxo7DZXaFgmO9v5nWPeou3w9zMQSrlsIkE8h22ji/3gcyp2nLcG1YaVp0Uce2ZobyymSnHU+hX5g6gY9mFQFXYgP7RzMGAJSNAioVLHOzwXeANe33etH3Il/UkF8dRXMmQN6i+d3YHC2F7A2V8lvf7HdCbzWPer3JBmQaCpbNyCUjAwOrcexJfxpm+gmygTVnI5EgqJim7P56JjsQRVicf1l/C4rshqAsrQtsYPjT67RarcFyk62sknZesc0Mt7IHM5BlcHG6g2fDBmNm18ZRtssqF/dn1gf2dpmeWC7YGislZgxoYxs2sznw2WXWPSuOXocNK50FEa/+RsjA3jUu6jacwuL70LYogHk2wD7XlfGBzbxC0fcdVQJoXFCrrQPL4eL8MRwbYfEawyWTdqDgbmMpln435n8cUe0QFpcpdYI724K2GlHhhqkYrHu46ShBYLeXixB3pdceNa6DaC3fCxuakmbm2IBFT+SITjM+F65DKQIV7d5jT3LZm7OBfsudGtNvBPxEJGFLC5VjMx26+yjIQVpP2ymna7RW9C1kTW9PcHYcxTWn0rtaOnD585Rwe3t+hfgfnPbI2ahYLR12jU4+r6nTBQhiXVTKcIleGRuV4U3eRL4x/M5/REVPWA3px0S0FeYg2RxhgSVAhKkdkv+c5gp0uET+sU5Y1S4G2lp2cxvL2eYzMmMDVDft1P+YLw66NBxhigS9AylPHWJsOEJTlg4TVyueRC0DUTkb2hNOkbMq6AK3ict35OREKZzbZbpTmc53tRM6DKbZthXnX8zYEK62OZnAmeYg4yUrxkTmUF6OhrIhybNjKyEP4KtKaX+nPQlzAfmRkik+GUwyQEjIe3962lp2z9mnxhQ47bT44Ie9NsyqlDA2+NzcDDSlN/tmOukkri+6cjLuKBuyPDsSJLW37P8jbgyrPUl7notBmlYg2XaRdZcuO13SiAoOcyf+qF9inBJSQo9tXj3m86BsSBQRWRyYihrigpPXKSNSIQsSEzakWyMapPQYeSShIIzeWgLQ+i2Z65pMf9wQNyaH9lO/ji5pRE0HnRpD9eI4+S6IDjX1szGibEg8UsNC6XeSby2vqUGGyGFamLAhX8a0OjlbOkT2HLdEQpDZma2zbzLIWNyYCFgn6eh5dV/YPX+OUnOcfnafnYQDdPgpGxIPPXUsUFVL5pk8/4FcOJVdEUb1rNR5TsjLdIHJPi2bCSbKOS0apU0aUQMQWaWWdwanxWX4Il/NUkcZG5LWhfrWRHwqThySL2fCnF6wI/U2E283K7Rl5N/LbEnLYBthJ/ZE/zw26K5FnXpimp8jAlVJqDAIMi/kgrBBxDVVjnJnPmnNbg2h2zNpa6I4mFvB6Pgq02BmDo/EQNAnjaj/IJm06mSHcy7moMFJGq+qw8aCsCF/9arQgIv9iZEOKbOIzdhg+z+jZLTEAqtd96X0CjJX1FnT6tPiGlC7nsjzOmwQPas4jUvOrjCpR9iwpa3p2qBsxGzjowKc8e/WNE79MQZJIwZsqDk96/7xcTqoNEBWh41N0cqsAhTGn+oNaWuyGthJFBaJODQVyAx7sgqxqm1znojUM7PPqVZT6w11WFwD4myiwq4OG+RoiNyeI/uRTJpQm0pKHpm2Wf42MRh0QU2Kpm5iMGiTRgK18Uo2vlOlnaw6u68FETj0S+qwQbdc0mNVxJrMrFDdNXnEYM6e/9a4LIZOVoNNsC5pxBkHKuuVuijUnmBgdImHBB5PaB02qDtC6ERJQNyq2XgSNuRllEv7EXqtldDFWAHZlhqEQDVJI3j15ipqstCQykBtNBjdiyYBkaTMv1GHDSqtZQ5kakxmsqbqkBc0p47vt+yTKwFXMUiQWX/WVJM0kjrVZrKyR5imIWoy3VVJCkt59lEK4mplBwNrsUHHW1yzhkbucq5YBFUcNW6R8XTKblnDkuTUvYx0Ilu9qaQlPjof5RQuQoYTk5eoXeq541M0KLa/UJhcPep6WhZ6a8YG9enaoWgMaMQ8n9tMAPjC2bF3Ss2ZlyCULL24oIDoSsKykDRzOysrjQRZ+OqrmoEbgDH9zEhtCajmT7LVDqBUvbEMdrYpqMUGu2s72FbpoAFLrqJ49g2eQJHPydOCmiC7SwsJ2euExZpetPxHKIxJuyvIOFWxYbfj7FdGhYC17YB25ubWGAKKsDid+v5W7Mli4evM8KnHBvMP4bAkrOIFtQE5FZ/PqOrkaNAvLKRAsJmC9lUjZQLtovnAxsgRCIIlwhYclXshQAA4E87t/SIPId9HAFrf+QfqIrFywyPj0QaLqoYb7NljxL63JhvrLG2mwS+PiUflLp/vw40Dei8sps6KpZ4UvfMN+mMnLK2m5TZ5UpyEdN4dBUEpS+xznDxht7hrKo3AYsw+Hi6j3tea721T51uRn81389UWINAYcf1sjfIMYi8L39Vk463P+HRg8ytO3/DZAMzmCPmgFT8rMfzOGT2wVNtKjgHL1rKRPx/SvrujuU+jMsWEnwMbphBOR3T8WsPZlmqAkIyzrtJIuFX7/H61ji5FWNz94AbBQd7Hd/Q1XI96uy6XQOjnbNZlgysdhJHnt9shzDOTw0IYtSgjHG877feiySHI9GXglNVPXnXOChG0V93uCnPvx8UwbZ5b4yDorLo/H5aH8kR74pPRJo3YcCM3qgcLvUdeWdK+eH4tcPzkoAmf0Wr53IqvzUYm8smn8DPPL6ozlqWQtU3SdsPcWgz8qsR325wPwg4w5h0XASxFrt55wkuNWXrYWJ/Cg+G72APQMjoLqPYI6M6vIV7r1GdDnNOfzLGSaUqGqm1JlKCzjUV/8V1qwYRWZQ7PpeVRMQtuGiWNYBRWz2etcwmshC4sHiFfygcuGjgnsPG2bgvoDv2yFUf2/AtxNVgbyC7XicQnJxwoEs+fWCjWMdwzIWh4WVBy4mq86w0HibZqxcNo6gDDkLo+LB6V86FZN71x6ZjCCWwkNykUs3sD39tVrNIs2hSBStVqhOWxZLcBy5Mp8OFUsqOdoMo5q5A/bqZ2vxb/SugnJw2P/wDkqxMTeJiUtB9OEQgLQ2ZjH+7L6/E0No725RiiMKnRnpRoh+2+YHeex/5aMx85nP4Atnpxu5M2fXvy+qM+H0cKDwjpSnJe0U4btyc8cZe/LMjQ7TycvIfwSLMfHtUn8sJfwfFSF4YJZDGhrZ8+FRkd7tdus2q3V/tCKV8OhUjsqGGxg6vtuUEcebDc/Y4X2/bqZ9r/1Hms3a9Zc7xotxfdw4SY3TnOTBoxYcM8LB6vv6L+ZNbvfcbiBtHsiJ1ssX3tksen5dKV4+LuerRcjtbnBANOwOUvC9KVtL8PaLMUroIzk0ZM2DgnLH413AcbZyaNmLAR3/gTjXAfbJxZQNIAipSmO8J9sHFmcVU9/sgdsffBholr5Cz8kdvl7oSNM6uragHPyd+5Hu6Ejbf2RRcHOvEozbVxL2ysL6k5RMdA7xL3wkYWfr4AnPaVN7Mn427YePsyvbevJgLw81fIuCM23twpRKHzbxH63uL0Q01Xxx2xceRjOWv8W+yic45tXB13xcbT48XGPeHFxj3hxcY94cXGPeHFxj0BJFkGWHG44YUr4jA+4kN9tOey+B/oSw+Via4DwwAAAABJRU5ErkJggg==" />
+
+                    </li>
+                </ul>
+            </div>
+        </button>
+        <button class="menu_cart-add"><a style="color: #2196f3;" href="cart.html">CHO VÀO GIỎ </a></button>
+    </div>
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./assets/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        let slidesToShow = 3
+        if ($(window).width() <= 992) { slidesToShow = 3 }
+        if ($(window).width() <= 768) { slidesToShow = 2 }
+
+        $(".slider_container").slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: slidesToShow,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            pauseOnHover: true,
+            centerMode: true,
+
+
+            prevArrow:
+                '<button class="slick-arrow ti-angle-left slick-arrow-prev"></button>',
+            nextArrow:
+                '<button class=" slick-arrow ti-angle-right slick-arrow-next"></button>',
+
+        });
+    </script>
+
+    <script src="./js/lib-v1.js"></script>
+    <script src="./js/product_detail.js"></script>
+    <!-- script -->
+
+    <script type="text/javascript">
+        function showMoreModal() {
+            const list = document.querySelector('.modal-body ul ul')
+            const iconMore = document.querySelector('.modal-body ul li i ')
+            if (list.style.display === 'none' || list.style.display === '') {
+                list.style.display = 'block'
+                iconMore.style.transform = 'rotate(90deg)'
+            } else {
+                list.style.display = 'none'
+                iconMore.classList.remove = "ti-angle-up"
+                iconMore.classList.add = "ti-angle-down"
+            }
+        }
+    </script>
+</body>
+
+</html>

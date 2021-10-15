@@ -1,0 +1,25 @@
+@media only screen and (max-width: 992px) {
+  .menu_cart {
+    display: none !important;
+  }
+  .product_detail-cart {
+    display: block;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .menu_cart {
+    display: none !important;
+  }
+  .product_detail-cart {
+    display: block;
+  }
+  .row {
+    width: 100% !important;
+  }
+  .product-detail-page
+    .product-detail-container
+    .product_detail-cart
+    .button-buynow {
+    margin-bottom: 20px;
+  }
+}
