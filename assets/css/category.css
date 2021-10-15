@@ -364,7 +364,7 @@
 
 .gift-form-infor-title {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   padding: 10px;
 }
@@ -410,6 +410,7 @@
 .gift-form-time-clock {
   font-size: 44px;
   min-width: 276px;
+  text-align: center;
 }
 
 .product-list-container {

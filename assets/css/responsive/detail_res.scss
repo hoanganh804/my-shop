@@ -67,7 +67,7 @@
   }
   .same-header-active {
     &:after {
-      width: 185px !important;
+      width: 90px !important;
     }
   }
 
@@ -108,13 +108,10 @@
   .slider_product_same-header span {
     font-size: 18px;
     margin-left: 40px !important;
-    &:last-child {
-      display: none;
-    }
   }
   .same-header-active {
     &:after {
-      width: 185px !important;
+      width: 90px !important;
     }
   }
 }

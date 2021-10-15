@@ -341,7 +341,7 @@ $hover_color_font_blue: #2196f3;
       flex-direction: column;
       &-title {
         color: white;
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 500;
         padding: 10px;
       }
@@ -377,6 +377,7 @@ $hover_color_font_blue: #2196f3;
       &-clock {
         font-size: 44px;
         min-width: 276px;
+        text-align: center;
       }
       // &-icon {
       //   width: fit-content;
