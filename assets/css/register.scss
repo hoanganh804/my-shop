@@ -1,11 +1,34 @@
 .main-container {
   background-image: url("https://giaohang.shop/assets/img/register-background.jpg");
-  height: 100vh;
+  height: 120vh;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  .logo-register {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    .logo {
+      width: 200px;
+      height: 200px;
+      background-image: url("https://baabrand.com/wp-content/uploads/2018/12/icon-thiet-ke-logo-thuong-hieu-baabrand-4.png");
+      background-size: cover;
+    }
+    .content {
+      .content-text {
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        color: white;
+        i {
+          font-size: 28px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
   .form-register {
     display: flex;
     flex-direction: column;
@@ -40,5 +63,14 @@
       font-weight: 600;
       color: white;
     }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .content {
+    display: none !important;
+  }
+  .logo {
+    margin-bottom: 50px;
   }
 }
