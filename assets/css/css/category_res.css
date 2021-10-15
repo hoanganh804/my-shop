@@ -123,7 +123,6 @@
   .list-product-item .sold-out {
     position: absolute;
     height: 60px;
-    top: 46%;
     text-align: center;
     font-weight: 500;
     font-size: 20px;
