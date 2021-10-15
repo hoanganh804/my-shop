@@ -304,12 +304,11 @@ $hover_color_font_blue: #2196f3;
       &:first-child {
         border-left: none;
       }
-      &:hover {
-        box-shadow: 0px 0px 10px 1px rgba(160, 160, 160, 0.749);
-        z-index: 1;
-        .add-to-cart {
-          display: block;
-        }
+
+      box-shadow: 0px 0px 10px 1px rgba(160, 160, 160, 0.749);
+      z-index: 1;
+      .add-to-cart {
+        display: block !important;
       }
 
       &-img {

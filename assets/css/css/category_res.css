@@ -36,17 +36,16 @@
     padding: 0;
     background-color: white;
     border-bottom: 1px solid #ccc;
-  }
-  .list-product-item:first-child {
-    border-left: none;
-  }
-  .list-product-item:hover {
     -webkit-box-shadow: 0px 0px 10px 1px rgba(160, 160, 160, 0.749);
             box-shadow: 0px 0px 10px 1px rgba(160, 160, 160, 0.749);
     z-index: 1;
   }
-  .list-product-item:hover .add-to-cart {
-    display: block;
+  .list-product-item:first-child {
+    border-left: none;
+  }
+  .list-product-item .add-to-cart {
+    display: block !important;
+    bottom: 104px !important;
   }
   .list-product-item-img {
     -o-object-fit: cover;
