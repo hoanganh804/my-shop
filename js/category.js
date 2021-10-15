@@ -188,6 +188,8 @@ function start() {
       $("#js-cat-" + id).show();
     });
   }
+
+  countTime();
 }
 
 const loadMore = () => {
@@ -217,6 +219,34 @@ const loadMore = () => {
   }
 
   listProduct.insertAdjacentHTML("beforeend", newProducts);
+};
+
+const countTime = () => {
+  let hours = 2;
+  let minutes = 1;
+  let seconds = 10;
+
+  var x = setInterval(function () {
+    seconds -= 1;
+    if (seconds < 0) {
+      seconds = 60;
+      minutes -= 1;
+    }
+    if (minutes < 0) {
+      minutes = 59;
+      seconds = 60;
+      hours -= 1;
+    }
+
+    let newHour = `0${hours}`.slice(-2);
+    let newMinutes = `0${minutes}`.slice(-2);
+    let newSeconds = `0${seconds}`.slice(-2);
+    // Output the result in an element with id="demo"
+    document.getElementById("countTime").innerHTML =
+      newHour + "h " + newMinutes + "m " + newSeconds + "s ";
+
+    // If the count down is over, write some text
+  }, 1000);
 };
 
 start();

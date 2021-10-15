@@ -27,6 +27,9 @@ $hover_color_font_blue: #2196f3;
 }
 
 @media only screen and (max-width: 1200px) {
+  .header-menu-container .sub-menu {
+    width: calc(960px - 200px) !important;
+  }
   body {
     margin: 0;
   }
