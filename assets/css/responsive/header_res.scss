@@ -50,6 +50,10 @@ $hover_color_font_blue: #2196f3;
     .item.clearfix:nth-child(4) {
       display: block;
     }
+    .item.clearfix:nth-child(3) {
+      display: flex;
+      padding-right: 10px;
+    }
     .header-menu-holder {
       display: none;
       padding: 2px 0;
@@ -284,6 +288,11 @@ $hover_color_font_blue: #2196f3;
     margin: 0;
     // max-width: 960px;
   }
+  // header {
+  //   position: fixed;
+  //   width: 100%;
+  //   z-index: 909900;
+  // }
   .cart_category-product {
     &-item {
       height: 380px;
@@ -588,6 +597,9 @@ $hover_color_font_blue: #2196f3;
     }
     .item.clearfix:last-child {
       display: block;
+    }
+    .item.clearfix:nth-child(3) {
+      display: none;
     }
     .header-menu-holder {
       display: none;

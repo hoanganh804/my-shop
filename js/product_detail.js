@@ -47,3 +47,16 @@ const changeProductSame = (id) => {
     });
   }
 };
+
+const itemChoiceOptions = [...document.querySelectorAll(".input-label-option")];
+const itemChoiceLabel = [...document.querySelectorAll(".label-option")];
+// console.log(itemChoiceOptions);
+
+const onclickItemChoice = (id) => {
+  const itemChoiceOption = document.getElementById(id);
+  const itemParent = itemChoiceOption.parentElement;
+  itemChoiceOptions.map((item) => (item.checked = false));
+  itemChoiceLabel.map((item) => item.classList.remove("current"));
+  itemChoiceOption.checked = true;
+  itemParent.classList.add("current");
+};

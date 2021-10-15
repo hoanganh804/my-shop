@@ -31,17 +31,64 @@ $hover_color_font_blue: #2196f3;
     min-height: 100%;
     border: 0 none;
     border-radius: 0;
+    .modal-footer {
+      padding: 0;
+      justify-content: flex-start;
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          .icon {
+            margin: 0;
+            font-size: 28px;
+            margin-right: 6px;
+            font-weight: 500;
+          }
+          list-style: none;
+
+          font-size: 24px;
+          height: 70px;
+          line-height: 70px;
+          padding-left: 20px;
+          font-weight: bold;
+          color: #7c7c7c;
+          i {
+            margin-left: 180px;
+          }
+        }
+        ul {
+          display: none;
+          li {
+            padding-left: 30px;
+            background-color: rgb(228, 228, 228);
+          }
+        }
+      }
+    }
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
 .modal-body {
+  flex: 0;
   padding: 0;
   ul {
     margin: 0;
     padding: 0;
     li {
+      .icon {
+        margin: 0;
+        font-size: 28px;
+        margin-right: 6px;
+        font-weight: 500;
+        // color: rgb(39, 39, 39);
+      }
       list-style: none;
-      border-top: 1px solid #ccc;
+
       font-size: 24px;
       height: 70px;
       line-height: 70px;
