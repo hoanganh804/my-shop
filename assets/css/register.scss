@@ -1,6 +1,7 @@
 .main-container {
   background-image: url("https://giaohang.shop/assets/img/register-background.jpg");
-  height: 80vh;
+  // height: 80vh;
+  padding: 60px 0;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -80,3 +81,21 @@
 .header-menu-container .header-menu-holder {
   display: none;
 }
+
+// @media only screen and (max-width: 992px) {
+//   .main-container {
+//     height: 122vh;
+//   }
+// }
+
+// @media only screen and (max-width: 9px) {
+//   .content {
+//     display: none !important;
+//   }
+//   .logo-register {
+//     .logo {
+//       margin-bottom: 50px;
+//     }
+//   }
+
+// }
