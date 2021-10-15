@@ -130,6 +130,7 @@ $hover_color_font_blue: #2196f3;
             overflow: hidden;
             box-shadow: 10px 10px 20px -10px rgb(151, 151, 151);
             transition: all 2s linear;
+            border: 1px solid rgb(236, 236, 236);
             display: none;
             ul {
               padding: 0;
@@ -137,11 +138,21 @@ $hover_color_font_blue: #2196f3;
               li {
                 list-style: none;
                 height: 80px;
+                background-color: white;
+                &:last-child {
+                  border-top: 1px solid #ccc;
+                }
                 img {
                   width: 100%;
                   height: 100%;
                   // background-size: cover;
                   object-fit: cover;
+                }
+                .shopee {
+                  transform: scale(0.9);
+                }
+                .lazada {
+                  transform: scale(0.8);
                 }
               }
             }
@@ -240,6 +251,7 @@ $hover_color_font_blue: #2196f3;
       font-weight: 500;
     }
     &-infor {
+      text-align: center;
       input {
         height: 46px;
         width: 380px;
@@ -492,6 +504,51 @@ $hover_color_font_blue: #2196f3;
     color: white;
     font-size: 20px;
     font-weight: 500;
+    &:hover {
+      .shopee-lazada {
+        display: block;
+      }
+    }
+    .shopee-lazada {
+      position: absolute;
+      bottom: 50px;
+      width: 100%;
+      left: 0;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+      transition: all 2s linear;
+      display: none;
+      ul {
+        padding: 0;
+        margin: 0;
+        li {
+          list-style: none;
+          height: 80px;
+          overflow: hidden;
+
+          background-color: white;
+          &:first-child {
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            // background-size: cover;
+            object-fit: contain;
+          }
+          .lazada {
+            // border-top: 2px solid #ccc;
+          }
+          .shopee {
+            padding: 10px;
+            transform: scale(0.8);
+          }
+        }
+      }
+    }
   }
   &-add {
     background-color: white;

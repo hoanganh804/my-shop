@@ -148,6 +148,7 @@
           box-shadow: 10px 10px 20px -10px #979797;
   -webkit-transition: all 2s linear;
   transition: all 2s linear;
+  border: 1px solid #ececec;
   display: none;
 }
 
@@ -159,6 +160,11 @@
 .product-detail-page .product-detail-container .product_detail-cart .button-tragop .shopee-lazada ul li {
   list-style: none;
   height: 80px;
+  background-color: white;
+}
+
+.product-detail-page .product-detail-container .product_detail-cart .button-tragop .shopee-lazada ul li:last-child {
+  border-top: 1px solid #ccc;
 }
 
 .product-detail-page .product-detail-container .product_detail-cart .button-tragop .shopee-lazada ul li img {
@@ -166,6 +172,16 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.product-detail-page .product-detail-container .product_detail-cart .button-tragop .shopee-lazada ul li .shopee {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.product-detail-page .product-detail-container .product_detail-cart .button-tragop .shopee-lazada ul li .lazada {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .product-detail-page .product-detail-container .product_detail-cart .button-add {
@@ -274,6 +290,10 @@
   color: white;
   font-size: 28px;
   font-weight: 500;
+}
+
+.product-detail-page .tuvan-infor {
+  text-align: center;
 }
 
 .product-detail-page .tuvan-infor input {
@@ -586,6 +606,52 @@
   color: white;
   font-size: 20px;
   font-weight: 500;
+}
+
+.menu_cart-tragop:hover .shopee-lazada {
+  display: block;
+}
+
+.menu_cart-tragop .shopee-lazada {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
+  display: none;
+}
+
+.menu_cart-tragop .shopee-lazada ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menu_cart-tragop .shopee-lazada ul li {
+  list-style: none;
+  height: 80px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.menu_cart-tragop .shopee-lazada ul li:first-child {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu_cart-tragop .shopee-lazada ul li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.menu_cart-tragop .shopee-lazada ul li .shopee {
+  padding: 10px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .menu_cart-add {

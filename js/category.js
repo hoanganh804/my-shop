@@ -238,12 +238,13 @@ const countTime = () => {
       hours -= 1;
     }
 
-    let newHour = `0${hours}`.slice(-2);
+    let newHours = `0${hours}`.slice(-2);
     let newMinutes = `0${minutes}`.slice(-2);
     let newSeconds = `0${seconds}`.slice(-2);
     // Output the result in an element with id="demo"
-    document.getElementById("countTime").innerHTML =
-      newHour + "h " + newMinutes + "m " + newSeconds + "s ";
+    document.getElementById("countTimeHours").innerHTML = newHours;
+    document.getElementById("countTimeMinutes").innerHTML = newMinutes;
+    document.getElementById("countTimeSeconds").innerHTML = newSeconds;
 
     // If the count down is over, write some text
   }, 1000);

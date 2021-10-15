@@ -411,6 +411,38 @@
   font-size: 44px;
   min-width: 276px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gift-form-time-clock .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #3d4679;
+  min-width: 100px;
+  min-height: 130px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.gift-form-time-clock .time span:last-child {
+  font-size: 20px;
+}
+
+.gift-form-time-clock .time + .time {
+  margin-left: 10px;
 }
 
 .product-list-container {

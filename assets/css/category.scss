@@ -378,6 +378,26 @@ $hover_color_font_blue: #2196f3;
         font-size: 44px;
         min-width: 276px;
         text-align: center;
+        display: flex;
+        .time {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: #3d4679;
+          min-width: 100px;
+          min-height: 130px;
+          margin-bottom: 20px;
+          border-radius: 4px;
+          span {
+            &:last-child {
+              font-size: 20px;
+            }
+          }
+        }
+        .time + .time {
+          margin-left: 10px;
+        }
       }
       // &-icon {
       //   width: fit-content;
