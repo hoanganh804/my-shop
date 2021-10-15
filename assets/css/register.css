@@ -89,6 +89,8 @@
   }
   .logo-register .logo {
     margin-bottom: 50px;
+    width: 150px !important;
+    height: 150px !important;
   }
 }
 
