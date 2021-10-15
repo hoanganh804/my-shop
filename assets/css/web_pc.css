@@ -4872,3 +4872,9 @@ span.ping {
 .container {
   padding: 0;
 }
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
