@@ -220,7 +220,7 @@
 }
 
 .list-product .sold-out-active .add-to-cart {
-  display: none;
+  display: none !important;
 }
 
 .list-product .comming-soon-active .comming-soon {
@@ -228,7 +228,7 @@
 }
 
 .list-product .comming-soon-active .add-to-cart {
-  display: none;
+  display: none !important;
 }
 
 .news {

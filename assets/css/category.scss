@@ -227,7 +227,7 @@ $hover_color_font_blue: #2196f3;
       display: block;
     }
     .add-to-cart {
-      display: none;
+      display: none !important;
     }
   }
   .comming-soon-active {
@@ -235,7 +235,7 @@ $hover_color_font_blue: #2196f3;
       display: block;
     }
     .add-to-cart {
-      display: none;
+      display: none !important;
     }
   }
 }
