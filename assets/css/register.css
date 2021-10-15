@@ -87,8 +87,12 @@
   .content {
     display: none !important;
   }
-  .logo {
+  .logo-register .logo {
     margin-bottom: 50px;
   }
+}
+
+.header-menu-container .header-menu-holder {
+  display: none;
 }
 /*# sourceMappingURL=register.css.map */
