@@ -190,4 +190,33 @@ function start() {
   }
 }
 
+const loadMore = () => {
+  const numberProduct = 10;
+  const listProduct = document.querySelector(".list-product .row");
+  let newProducts = "";
+  const newProduct = `
+                  <div class="col-6 col-lg-3 col-sm-6 col-lg-2-5 col-md-4  list-product-item">
+                          <a href="product_detail.html"><img src="./assets/img/product_watch.jpeg" alt="" class="list-product-item-img"> </a>
+                          <a href="cart.html">
+                            <div class="add-to-cart">Thêm vào giỏ</div>
+                          </a>
+                          <div class="ti-heart icon-like"></div>
+                          <div class="list-product-item-name">
+                            <a href="product_detail.html"> Doxa D8927134892 _ nam _ kinhs shphia _ quais _ day kinh jhoiuid</a>
+                            -hell owweiruweoir
+                          </div>
+                          <div class="list-product-item-price">
+                            <div class="list-product-item-price-now">
+                              219,093<u>đ</u>
+                            </div>
+                          </div>
+                  </div>`;
+
+  for (let i = 0; i < numberProduct; i++) {
+    newProducts += newProduct;
+  }
+
+  listProduct.insertAdjacentHTML("beforeend", newProducts);
+};
+
 start();
